@@ -3,8 +3,10 @@ import glob
 from setuptools import setup
 
 def build_package_data(package):
-    stubs = glob.glob(f'{package}/**/*.py', recursive=True)
-    
+    abs_stubs = glob.glob(f'{package}/**/*.py', recursive=True)
+    stubs = []
+    for f in abs_stubs:
+        stubs.append(os.path.relpath(f, package))
     return {package: stubs}
 
 

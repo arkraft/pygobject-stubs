@@ -1,12 +1,10 @@
 import os
+import glob
 from setuptools import setup
 
-
-def find_stubs(package):
-    stubs = []
-    for root, dirs, files in os.walk(package):
-        for f in files:
-            stubs.append(os.path.relpath(os.path.join(root, f), package))
+def build_package_data(package):
+    stubs = glob.glob(my_path + f'{package}/**/*.py', recursive=True)
+    
     return {package: stubs}
 
 
@@ -16,7 +14,7 @@ setup(
     author="Christoph Reiter",
     author_email="reiter.christoph@gmai.com",
     version="0.0.2",
-    package_data=find_stubs("gi-stubs"),
+    package_data=build_package_data("gi-stubs"),
     packages=["gi-stubs"],
     install_requires=["PyGObject"],
 )

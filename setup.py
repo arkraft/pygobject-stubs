@@ -15,7 +15,7 @@ setup(
     url="https://github.com/arkraft/pygobject-stubs",
     author="Christoph Reiter",
     author_email="reiter.christoph@gmai.com",
-    version="0.0.2",
+    version="0.0.3",
     package_data=build_package_data("gi-stubs"),
     packages=["gi-stubs"],
     install_requires=["PyGObject"],

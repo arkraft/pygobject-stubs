@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Handy
-# from /usr/lib64/girepository-1.0/Handy-0.0.typelib
+# from /usr/lib/x86_64-linux-gnu/girepository-1.0/Handy-1.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -19,16 +19,14 @@ import gi.repository.Gtk as __gi_repository_Gtk
 import gobject as __gobject
 
 
-from .DialerButton import DialerButton
-
-class DialerCycleButton(DialerButton):
+class ViewSwitcherTitle(__gi_repository_Gtk.Bin):
     """
     :Constructors:
     
     ::
     
-        DialerCycleButton(**properties)
-        new(symbols:str) -> Gtk.Widget
+        ViewSwitcherTitle(**properties)
+        new() -> Handy.ViewSwitcherTitle
     """
     def activate(self): # real signature unknown; restored from __doc__
         """ activate(self) -> bool """
@@ -124,10 +122,6 @@ class DialerCycleButton(DialerButton):
         """ class_path(self) -> path_length:int, path:str, path_reversed:str """
         pass
 
-    def clicked(self): # real signature unknown; restored from __doc__
-        """ clicked(self) """
-        pass
-
     def compat_control(self, *args, **kargs): # reliably restored by inspect
         # no doc
         pass
@@ -202,14 +196,10 @@ class DialerCycleButton(DialerButton):
         return False
 
     def disconnect(*args, **kwargs): # reliably restored by inspect
-        """ signal_handler_disconnect(instance:GObject.Object, handler_id:int) """
+        # no doc
         pass
 
     def disconnect_by_func(self, *args, **kwargs): # real signature unknown
-        pass
-
-    def do_activate(self, *args, **kwargs): # real signature unknown
-        """ activate(self) """
         pass
 
     def do_add(self, *args, **kwargs): # real signature unknown
@@ -256,10 +246,6 @@ class DialerCycleButton(DialerButton):
         """ child_type(self) -> GType """
         pass
 
-    def do_clicked(self, *args, **kwargs): # real signature unknown
-        """ clicked(self) """
-        pass
-
     def do_composited_changed(self, *args, **kwargs): # real signature unknown
         """ composited_changed(self) """
         pass
@@ -274,14 +260,6 @@ class DialerCycleButton(DialerButton):
 
     def do_configure_event(self, *args, **kwargs): # real signature unknown
         """ configure_event(self, event:Gdk.EventConfigure) -> bool """
-        pass
-
-    def do_cycle_end(self, *args, **kwargs): # real signature unknown
-        """ cycle_end(self) """
-        pass
-
-    def do_cycle_start(self, *args, **kwargs): # real signature unknown
-        """ cycle_start(self) """
         pass
 
     def do_damage_event(self, *args, **kwargs): # real signature unknown
@@ -346,10 +324,6 @@ class DialerCycleButton(DialerButton):
 
     def do_draw(self, *args, **kwargs): # real signature unknown
         """ draw(self, cr:cairo.Context) -> bool """
-        pass
-
-    def do_enter(self, *args, **kwargs): # real signature unknown
-        """ enter(self) """
         pass
 
     def do_enter_notify_event(self, *args, **kwargs): # real signature unknown
@@ -444,10 +418,6 @@ class DialerCycleButton(DialerButton):
         """ key_release_event(self, event:Gdk.EventKey) -> bool """
         pass
 
-    def do_leave(self, *args, **kwargs): # real signature unknown
-        """ leave(self) """
-        pass
-
     def do_leave_notify_event(self, *args, **kwargs): # real signature unknown
         """ leave_notify_event(self, event:Gdk.EventCrossing) -> bool """
         pass
@@ -480,10 +450,6 @@ class DialerCycleButton(DialerButton):
         """ popup_menu(self) -> bool """
         pass
 
-    def do_pressed(self, *args, **kwargs): # real signature unknown
-        """ pressed(self) """
-        pass
-
     def do_property_notify_event(self, *args, **kwargs): # real signature unknown
         """ property_notify_event(self, event:Gdk.EventProperty) -> bool """
         pass
@@ -506,10 +472,6 @@ class DialerCycleButton(DialerButton):
 
     def do_realize(self, *args, **kwargs): # real signature unknown
         """ realize(self) """
-        pass
-
-    def do_released(self, *args, **kwargs): # real signature unknown
-        """ released(self) """
         pass
 
     def do_remove(self, *args, **kwargs): # real signature unknown
@@ -550,10 +512,6 @@ class DialerCycleButton(DialerButton):
 
     def do_set_focus_child(self, *args, **kwargs): # real signature unknown
         """ set_focus_child(self, child:Gtk.Widget=None) """
-        pass
-
-    def do_set_related_action(self, action): # real signature unknown; restored from __doc__
-        """ do_set_related_action(self, action:Gtk.Action) """
         pass
 
     def do_show(self, *args, **kwargs): # real signature unknown
@@ -739,10 +697,6 @@ class DialerCycleButton(DialerButton):
         """ ensure_style(self) """
         pass
 
-    def enter(self): # real signature unknown; restored from __doc__
-        """ enter(self) """
-        pass
-
     def error_bell(self): # real signature unknown; restored from __doc__
         """ error_bell(self) """
         pass
@@ -809,18 +763,6 @@ class DialerCycleButton(DialerButton):
         """ get_action_group(self, prefix:str) -> Gio.ActionGroup or None """
         pass
 
-    def get_action_name(self): # real signature unknown; restored from __doc__
-        """ get_action_name(self) -> str or None """
-        return ""
-
-    def get_action_target_value(self): # real signature unknown; restored from __doc__
-        """ get_action_target_value(self) -> GLib.Variant """
-        pass
-
-    def get_alignment(self): # real signature unknown; restored from __doc__
-        """ get_alignment(self) -> xalign:float, yalign:float """
-        pass
-
     def get_allocated_baseline(self): # real signature unknown; restored from __doc__
         """ get_allocated_baseline(self) -> int """
         return 0
@@ -840,10 +782,6 @@ class DialerCycleButton(DialerButton):
     def get_allocation(self): # real signature unknown; restored from __doc__
         """ get_allocation(self) -> allocation:Gdk.Rectangle """
         pass
-
-    def get_always_show_image(self): # real signature unknown; restored from __doc__
-        """ get_always_show_image(self) -> bool """
-        return False
 
     def get_ancestor(self, widget_type): # real signature unknown; restored from __doc__
         """ get_ancestor(self, widget_type:GType) -> Gtk.Widget or None """
@@ -897,14 +835,6 @@ class DialerCycleButton(DialerButton):
         """ get_css_name(self) -> str """
         return ""
 
-    def get_current_symbol(self): # real signature unknown; restored from __doc__
-        """ get_current_symbol(self) -> str """
-        return ""
-
-    def get_cycle_timeout(self): # real signature unknown; restored from __doc__
-        """ get_cycle_timeout(self) -> int """
-        return 0
-
     def get_data(self, *args, **kargs): # reliably restored by inspect
         # no doc
         pass
@@ -925,10 +855,6 @@ class DialerCycleButton(DialerButton):
         """ get_device_events(self, device:Gdk.Device) -> Gdk.EventMask """
         pass
 
-    def get_digit(self): # real signature unknown; restored from __doc__
-        """ get_digit(self) -> int """
-        return 0
-
     def get_direction(self): # real signature unknown; restored from __doc__
         """ get_direction(self) -> Gtk.TextDirection """
         pass
@@ -945,12 +871,8 @@ class DialerCycleButton(DialerButton):
         """ get_events(self) -> int """
         return 0
 
-    def get_event_window(self): # real signature unknown; restored from __doc__
-        """ get_event_window(self) -> Gdk.Window """
-        pass
-
     def get_focus_chain(*args, **kwargs): # reliably restored by inspect
-        """ get_focus_chain(self) -> bool, focusable_widgets:list """
+        # no doc
         pass
 
     def get_focus_child(self): # real signature unknown; restored from __doc__
@@ -1001,21 +923,13 @@ class DialerCycleButton(DialerButton):
         """ get_hexpand_set(self) -> bool """
         return False
 
-    def get_image(self): # real signature unknown; restored from __doc__
-        """ get_image(self) -> Gtk.Widget or None """
-        pass
-
-    def get_image_position(self): # real signature unknown; restored from __doc__
-        """ get_image_position(self) -> Gtk.PositionType """
+    def get_icon_size(self): # real signature unknown; restored from __doc__
+        """ get_icon_size(self) -> Gtk.IconSize """
         pass
 
     def get_internal_child(self, builder, childname): # real signature unknown; restored from __doc__
         """ get_internal_child(self, builder:Gtk.Builder, childname:str) -> GObject.Object """
         pass
-
-    def get_label(self): # real signature unknown; restored from __doc__
-        """ get_label(self) -> str """
-        return ""
 
     def get_mapped(self): # real signature unknown; restored from __doc__
         """ get_mapped(self) -> bool """
@@ -1089,6 +1003,10 @@ class DialerCycleButton(DialerButton):
         """ get_pointer(self) -> x:int, y:int """
         pass
 
+    def get_policy(self): # real signature unknown; restored from __doc__
+        """ get_policy(self) -> Handy.ViewSwitcherPolicy """
+        pass
+
     def get_preferred_height(self): # real signature unknown; restored from __doc__
         """ get_preferred_height(self) -> minimum_height:int, natural_height:int """
         pass
@@ -1131,14 +1049,6 @@ class DialerCycleButton(DialerButton):
         """ get_receives_default(self) -> bool """
         return False
 
-    def get_related_action(self): # real signature unknown; restored from __doc__
-        """ get_related_action(self) -> Gtk.Action """
-        pass
-
-    def get_relief(self): # real signature unknown; restored from __doc__
-        """ get_relief(self) -> Gtk.ReliefStyle """
-        pass
-
     def get_request_mode(self): # real signature unknown; restored from __doc__
         """ get_request_mode(self) -> Gtk.SizeRequestMode """
         pass
@@ -1175,6 +1085,10 @@ class DialerCycleButton(DialerButton):
         """ get_size_request(self) -> width:int, height:int """
         pass
 
+    def get_stack(self): # real signature unknown; restored from __doc__
+        """ get_stack(self) -> Gtk.Stack or None """
+        pass
+
     def get_state(self): # real signature unknown; restored from __doc__
         """ get_state(self) -> Gtk.StateType """
         pass
@@ -1191,17 +1105,25 @@ class DialerCycleButton(DialerButton):
         """ get_style_context(self) -> Gtk.StyleContext """
         pass
 
+    def get_subtitle(self): # real signature unknown; restored from __doc__
+        """ get_subtitle(self) -> str or None """
+        return ""
+
     def get_support_multidevice(self): # real signature unknown; restored from __doc__
         """ get_support_multidevice(self) -> bool """
         return False
 
-    def get_symbols(self): # real signature unknown; restored from __doc__
-        """ get_symbols(self) -> str """
-        return ""
-
     def get_template_child(self, widget_type, name): # real signature unknown; restored from __doc__
         """ get_template_child(self, widget_type:GType, name:str) -> GObject.Object """
         pass
+
+    def get_title(self): # real signature unknown; restored from __doc__
+        """ get_title(self) -> str or None """
+        return ""
+
+    def get_title_visible(self): # real signature unknown; restored from __doc__
+        """ get_title_visible(self) -> bool """
+        return False
 
     def get_tooltip_markup(self): # real signature unknown; restored from __doc__
         """ get_tooltip_markup(self) -> str or None """
@@ -1219,18 +1141,6 @@ class DialerCycleButton(DialerButton):
         """ get_toplevel(self) -> Gtk.Widget """
         pass
 
-    def get_use_action_appearance(self): # real signature unknown; restored from __doc__
-        """ get_use_action_appearance(self) -> bool """
-        return False
-
-    def get_use_stock(self): # real signature unknown; restored from __doc__
-        """ get_use_stock(self) -> bool """
-        return False
-
-    def get_use_underline(self): # real signature unknown; restored from __doc__
-        """ get_use_underline(self) -> bool """
-        return False
-
     def get_valign(self): # real signature unknown; restored from __doc__
         """ get_valign(self) -> Gtk.Align """
         pass
@@ -1245,6 +1155,10 @@ class DialerCycleButton(DialerButton):
 
     def get_vexpand_set(self): # real signature unknown; restored from __doc__
         """ get_vexpand_set(self) -> bool """
+        return False
+
+    def get_view_switcher_enabled(self): # real signature unknown; restored from __doc__
+        """ get_view_switcher_enabled(self) -> bool """
         return False
 
     def get_visible(self): # real signature unknown; restored from __doc__
@@ -1299,15 +1213,15 @@ class DialerCycleButton(DialerButton):
         pass
 
     def handler_disconnect(*args, **kwargs): # reliably restored by inspect
-        """ signal_handler_disconnect(instance:GObject.Object, handler_id:int) """
+        # no doc
         pass
 
     def handler_is_connected(*args, **kwargs): # reliably restored by inspect
-        """ signal_handler_is_connected(instance:GObject.Object, handler_id:int) -> bool """
+        # no doc
         pass
 
     def handler_unblock(*args, **kwargs): # reliably restored by inspect
-        """ signal_handler_unblock(instance:GObject.Object, handler_id:int) """
+        # no doc
         pass
 
     def handler_unblock_by_func(self, *args, **kwargs): # real signature unknown
@@ -1409,10 +1323,6 @@ class DialerCycleButton(DialerButton):
         """ is_composited(self) -> bool """
         return False
 
-    def is_cycling(self): # real signature unknown; restored from __doc__
-        """ is_cycling(self) -> bool """
-        return False
-
     def is_drawable(self): # real signature unknown; restored from __doc__
         """ is_drawable(self) -> bool """
         return False
@@ -1440,10 +1350,6 @@ class DialerCycleButton(DialerButton):
     def keynav_failed(self, direction): # real signature unknown; restored from __doc__
         """ keynav_failed(self, direction:Gtk.DirectionType) -> bool """
         return False
-
-    def leave(self): # real signature unknown; restored from __doc__
-        """ leave(self) """
-        pass
 
     def list_accel_closures(self): # real signature unknown; restored from __doc__
         """ list_accel_closures(self) -> list """
@@ -1505,28 +1411,12 @@ class DialerCycleButton(DialerButton):
         """ modify_text(self, state:Gtk.StateType, color:Gdk.Color=None) """
         pass
 
-    def new(self, symbols): # real signature unknown; restored from __doc__
-        """ new(symbols:str) -> Gtk.Widget """
+    def new(self): # real signature unknown; restored from __doc__
+        """ new() -> Handy.ViewSwitcherTitle """
         pass
 
     def newv(self, object_type, parameters): # real signature unknown; restored from __doc__
         """ newv(object_type:GType, parameters:list) -> GObject.Object """
-        pass
-
-    def new_from_icon_name(self, icon_name=None, size): # real signature unknown; restored from __doc__
-        """ new_from_icon_name(icon_name:str=None, size:int) -> Gtk.Widget """
-        pass
-
-    def new_from_stock(self, stock_id): # real signature unknown; restored from __doc__
-        """ new_from_stock(stock_id:str) -> Gtk.Widget """
-        pass
-
-    def new_with_label(self, label): # real signature unknown; restored from __doc__
-        """ new_with_label(label:str) -> Gtk.Widget """
-        pass
-
-    def new_with_mnemonic(self, label): # real signature unknown; restored from __doc__
-        """ new_with_mnemonic(label:str) -> Gtk.Widget """
         pass
 
     def notify(self, property_name): # real signature unknown; restored from __doc__
@@ -1571,10 +1461,6 @@ class DialerCycleButton(DialerButton):
 
     def pop_composite_child(self): # real signature unknown; restored from __doc__
         """ pop_composite_child() """
-        pass
-
-    def pressed(self): # real signature unknown; restored from __doc__
-        """ pressed(self) """
         pass
 
     def propagate_draw(self, child, cr): # real signature unknown; restored from __doc__
@@ -1631,10 +1517,6 @@ class DialerCycleButton(DialerButton):
 
     def register_window(self, window): # real signature unknown; restored from __doc__
         """ register_window(self, window:Gdk.Window) """
-        pass
-
-    def released(self): # real signature unknown; restored from __doc__
-        """ released(self) """
         pass
 
     def remove(self, widget): # real signature unknown; restored from __doc__
@@ -1709,24 +1591,8 @@ class DialerCycleButton(DialerButton):
         """ set_accessible_type(self, type:GType) """
         pass
 
-    def set_action_name(self, action_name=None): # real signature unknown; restored from __doc__
-        """ set_action_name(self, action_name:str=None) """
-        pass
-
-    def set_action_target_value(self, target_value=None): # real signature unknown; restored from __doc__
-        """ set_action_target_value(self, target_value:GLib.Variant=None) """
-        pass
-
-    def set_alignment(self, xalign, yalign): # real signature unknown; restored from __doc__
-        """ set_alignment(self, xalign:float, yalign:float) """
-        pass
-
     def set_allocation(self, allocation): # real signature unknown; restored from __doc__
         """ set_allocation(self, allocation:Gdk.Rectangle) """
-        pass
-
-    def set_always_show_image(self, always_show): # real signature unknown; restored from __doc__
-        """ set_always_show_image(self, always_show:bool) """
         pass
 
     def set_app_paintable(self, app_paintable): # real signature unknown; restored from __doc__
@@ -1769,20 +1635,12 @@ class DialerCycleButton(DialerButton):
         """ set_css_name(self, name:str) """
         pass
 
-    def set_cycle_timeout(self, timeout): # real signature unknown; restored from __doc__
-        """ set_cycle_timeout(self, timeout:int) """
-        pass
-
     def set_data(self, *args, **kargs): # reliably restored by inspect
         # no doc
         pass
 
     def set_default_direction(self, dir): # real signature unknown; restored from __doc__
         """ set_default_direction(dir:Gtk.TextDirection) """
-        pass
-
-    def set_detailed_action_name(self, detailed_action_name): # real signature unknown; restored from __doc__
-        """ set_detailed_action_name(self, detailed_action_name:str) """
         pass
 
     def set_device_enabled(self, device, enabled): # real signature unknown; restored from __doc__
@@ -1853,16 +1711,8 @@ class DialerCycleButton(DialerButton):
         """ set_hexpand_set(self, set:bool) """
         pass
 
-    def set_image(self, image=None): # real signature unknown; restored from __doc__
-        """ set_image(self, image:Gtk.Widget=None) """
-        pass
-
-    def set_image_position(self, position): # real signature unknown; restored from __doc__
-        """ set_image_position(self, position:Gtk.PositionType) """
-        pass
-
-    def set_label(self, label): # real signature unknown; restored from __doc__
-        """ set_label(self, label:str) """
+    def set_icon_size(self, icon_size): # real signature unknown; restored from __doc__
+        """ set_icon_size(self, icon_size:Gtk.IconSize) """
         pass
 
     def set_mapped(self, mapped): # real signature unknown; restored from __doc__
@@ -1913,6 +1763,10 @@ class DialerCycleButton(DialerButton):
         """ set_parent_window(self, parent_window:Gdk.Window) """
         pass
 
+    def set_policy(self, policy): # real signature unknown; restored from __doc__
+        """ set_policy(self, policy:Handy.ViewSwitcherPolicy) """
+        pass
+
     def set_properties(self, *args, **kwargs): # real signature unknown
         pass
 
@@ -1935,14 +1789,6 @@ class DialerCycleButton(DialerButton):
         """ set_redraw_on_allocate(self, redraw_on_allocate:bool) """
         pass
 
-    def set_related_action(self, action): # real signature unknown; restored from __doc__
-        """ set_related_action(self, action:Gtk.Action) """
-        pass
-
-    def set_relief(self, relief): # real signature unknown; restored from __doc__
-        """ set_relief(self, relief:Gtk.ReliefStyle) """
-        pass
-
     def set_resize_mode(self, resize_mode): # real signature unknown; restored from __doc__
         """ set_resize_mode(self, resize_mode:Gtk.ResizeMode) """
         pass
@@ -1953,6 +1799,10 @@ class DialerCycleButton(DialerButton):
 
     def set_size_request(self, width, height): # real signature unknown; restored from __doc__
         """ set_size_request(self, width:int, height:int) """
+        pass
+
+    def set_stack(self, stack=None): # real signature unknown; restored from __doc__
+        """ set_stack(self, stack:Gtk.Stack=None) """
         pass
 
     def set_state(self, state): # real signature unknown; restored from __doc__
@@ -1967,6 +1817,10 @@ class DialerCycleButton(DialerButton):
         """ set_style(self, style:Gtk.Style=None) """
         pass
 
+    def set_subtitle(self, subtitle=None): # real signature unknown; restored from __doc__
+        """ set_subtitle(self, subtitle:str=None) """
+        pass
+
     def set_support_multidevice(self, support_multidevice): # real signature unknown; restored from __doc__
         """ set_support_multidevice(self, support_multidevice:bool) """
         pass
@@ -1977,6 +1831,10 @@ class DialerCycleButton(DialerButton):
 
     def set_template_from_resource(self, resource_name): # real signature unknown; restored from __doc__
         """ set_template_from_resource(self, resource_name:str) """
+        pass
+
+    def set_title(self, title=None): # real signature unknown; restored from __doc__
+        """ set_title(self, title:str=None) """
         pass
 
     def set_tooltip_markup(self, markup=None): # real signature unknown; restored from __doc__
@@ -1991,18 +1849,6 @@ class DialerCycleButton(DialerButton):
         """ set_tooltip_window(self, custom_window:Gtk.Window=None) """
         pass
 
-    def set_use_action_appearance(self, use_appearance): # real signature unknown; restored from __doc__
-        """ set_use_action_appearance(self, use_appearance:bool) """
-        pass
-
-    def set_use_stock(self, use_stock): # real signature unknown; restored from __doc__
-        """ set_use_stock(self, use_stock:bool) """
-        pass
-
-    def set_use_underline(self, use_underline): # real signature unknown; restored from __doc__
-        """ set_use_underline(self, use_underline:bool) """
-        pass
-
     def set_valign(self, align): # real signature unknown; restored from __doc__
         """ set_valign(self, align:Gtk.Align) """
         pass
@@ -2013,6 +1859,10 @@ class DialerCycleButton(DialerButton):
 
     def set_vexpand_set(self, set): # real signature unknown; restored from __doc__
         """ set_vexpand_set(self, set:bool) """
+        pass
+
+    def set_view_switcher_enabled(self, enabled): # real signature unknown; restored from __doc__
+        """ set_view_switcher_enabled(self, enabled:bool) """
         pass
 
     def set_visible(self, visible): # real signature unknown; restored from __doc__
@@ -2063,16 +1913,12 @@ class DialerCycleButton(DialerButton):
         # no doc
         pass
 
-    def stop_cycle(self): # real signature unknown; restored from __doc__
-        """ stop_cycle(self) """
-        pass
-
     def stop_emission(self, detailed_signal): # reliably restored by inspect
         """ Deprecated, please use stop_emission_by_name. """
         pass
 
     def stop_emission_by_name(*args, **kwargs): # reliably restored by inspect
-        """ signal_stop_emission_by_name(instance:GObject.Object, detailed_signal:str) """
+        # no doc
         pass
 
     def style_attach(self): # real signature unknown; restored from __doc__
@@ -2081,10 +1927,6 @@ class DialerCycleButton(DialerButton):
 
     def style_get_property(self, property_name, value=None): # reliably restored by inspect
         # no doc
-        pass
-
-    def sync_action_properties(self, action=None): # real signature unknown; restored from __doc__
-        """ sync_action_properties(self, action:Gtk.Action=None) """
         pass
 
     def thaw_child_notify(self): # real signature unknown; restored from __doc__
@@ -2096,7 +1938,7 @@ class DialerCycleButton(DialerButton):
         pass
 
     def translate_coordinates(*args, **kwargs): # reliably restored by inspect
-        """ translate_coordinates(self, dest_widget:Gtk.Widget, src_x:int, src_y:int) -> bool, dest_x:int, dest_y:int """
+        # no doc
         pass
 
     def trigger_tooltip_query(self): # real signature unknown; restored from __doc__
@@ -2142,13 +1984,6 @@ class DialerCycleButton(DialerButton):
         """ force_floating(self) """
         pass
 
-    def _init(self, *args, **kwargs): # reliably restored by inspect
-        """
-        Initializer for a GObject based classes with support for property
-                sets through the use of explicit keyword arguments.
-        """
-        pass
-
     def _ref(self, *args, **kwargs): # real signature unknown
         """ ref(self) -> GObject.Object """
         pass
@@ -2187,16 +2022,19 @@ class DialerCycleButton(DialerButton):
         """ Implement delattr(self, name). """
         pass
 
-    def __dir__(self, *args, **kwargs): # real signature unknown
-        """ Default dir() implementation. """
-        pass
+    def __dir__(self): # real signature unknown; restored from __doc__
+        """
+        __dir__() -> list
+        default dir() implementation
+        """
+        return []
 
     def __eq__(self, *args, **kwargs): # real signature unknown
         """ Return self==value. """
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
-        """ Default object formatter. """
+        """ default object formatter """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -2224,8 +2062,7 @@ class DialerCycleButton(DialerButton):
         """
         pass
 
-    def __init__(self, *args, **kwargs): # reliably restored by inspect
-        # no doc
+    def __init__(self, **properties): # real signature unknown; restored from __doc__
         pass
 
     def __iter__(self): # reliably restored by inspect
@@ -2258,11 +2095,11 @@ class DialerCycleButton(DialerButton):
         pass
 
     def __reduce_ex__(self, *args, **kwargs): # real signature unknown
-        """ Helper for pickle. """
+        """ helper for pickle """
         pass
 
     def __reduce__(self, *args, **kwargs): # real signature unknown
-        """ Helper for pickle. """
+        """ helper for pickle """
         pass
 
     def __repr__(self, *args, **kwargs): # real signature unknown
@@ -2273,9 +2110,12 @@ class DialerCycleButton(DialerButton):
         """ Implement setattr(self, name, value). """
         pass
 
-    def __sizeof__(self, *args, **kwargs): # real signature unknown
-        """ Size of object in memory, in bytes. """
-        pass
+    def __sizeof__(self): # real signature unknown; restored from __doc__
+        """
+        __sizeof__() -> int
+        size of object in memory, in bytes
+        """
+        return 0
 
     def __str__(self, *args, **kwargs): # real signature unknown
         """ Return str(self). """
@@ -2294,8 +2134,6 @@ class DialerCycleButton(DialerButton):
 
     def __weakref__(self, *args, **kwargs): # real signature unknown
         pass
-
-    bin = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
     container = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
@@ -2316,12 +2154,12 @@ class DialerCycleButton(DialerButton):
     __grefcount__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
-    props = None # (!) real value is '<gi._gi.GProps object at 0x7f4ea0c24e50>'
+    props = None # (!) real value is '<gi._gi.GProps object at 0x7f2c9635aa58>'
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(DialerCycleButton), '__module__': 'gi.repository.Handy', '__gtype__': <GType HdyDialerCycleButton (93893294983744)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new), 'get_current_symbol': gi.FunctionInfo(get_current_symbol), 'get_cycle_timeout': gi.FunctionInfo(get_cycle_timeout), 'is_cycling': gi.FunctionInfo(is_cycling), 'set_cycle_timeout': gi.FunctionInfo(set_cycle_timeout), 'stop_cycle': gi.FunctionInfo(stop_cycle), 'do_cycle_end': gi.VFuncInfo(cycle_end), 'do_cycle_start': gi.VFuncInfo(cycle_start), 'parent_instance': <property object at 0x7f4ea0d633b0>})"
-    __gdoc__ = "Object HdyDialerCycleButton\n\nSignals from HdyDialerCycleButton:\n  cycle-start ()\n  cycle-end ()\n\nProperties from HdyDialerCycleButton:\n  cycle-timeout -> gint: Cycle timeout\n    The timeout (in seconds) between button presses afterwhich a cycle ends\n\nProperties from HdyDialerButton:\n  digit -> gint: Digit\n    The dialer digit of the button\n  symbols -> gchararray: Symbols\n    The dialer symbols of the button\n\nSignals from GtkButton:\n  activate ()\n  pressed ()\n  released ()\n  clicked ()\n  enter ()\n  leave ()\n\nProperties from GtkButton:\n  label -> gchararray: Label\n    Text of the label widget inside the button, if the button contains a label widget\n  image -> GtkWidget: Image widget\n    Child widget to appear next to the button text\n  relief -> GtkReliefStyle: Border relief\n    The border relief style\n  use-underline -> gboolean: Use underline\n    If set, an underline in the text indicates the next character should be used for the mnemonic accelerator key\n  use-stock -> gboolean: Use stock\n    If set, the label is used to pick a stock item instead of being displayed\n  xalign -> gfloat: Horizontal alignment for child\n    Horizontal position of child in available space. 0.0 is left aligned, 1.0 is right aligned\n  yalign -> gfloat: Vertical alignment for child\n    Vertical position of child in available space. 0.0 is top aligned, 1.0 is bottom aligned\n  image-position -> GtkPositionType: Image position\n    The position of the image relative to the text\n  always-show-image -> gboolean: Always show image\n    Whether the image will always be shown\n\nSignals from GtkContainer:\n  add (GtkWidget)\n  remove (GtkWidget)\n  check-resize ()\n  set-focus-child (GtkWidget)\n\nProperties from GtkContainer:\n  border-width -> guint: Border width\n    The width of the empty border outside the containers children\n  resize-mode -> GtkResizeMode: Resize mode\n    Specify how resize events are handled\n  child -> GtkWidget: Child\n    Can be used to add a new child to the container\n\nSignals from GtkWidget:\n  composited-changed ()\n  destroy ()\n  show ()\n  hide ()\n  map ()\n  unmap ()\n  realize ()\n  unrealize ()\n  size-allocate (GdkRectangle)\n  state-changed (GtkStateType)\n  state-flags-changed (GtkStateFlags)\n  parent-set (GtkWidget)\n  hierarchy-changed (GtkWidget)\n  style-set (GtkStyle)\n  style-updated ()\n  direction-changed (GtkTextDirection)\n  grab-notify (gboolean)\n  child-notify (GParam)\n  draw (CairoContext) -> gboolean\n  mnemonic-activate (gboolean) -> gboolean\n  grab-focus ()\n  focus (GtkDirectionType) -> gboolean\n  move-focus (GtkDirectionType)\n  keynav-failed (GtkDirectionType) -> gboolean\n  event (GdkEvent) -> gboolean\n  event-after (GdkEvent)\n  button-press-event (GdkEvent) -> gboolean\n  button-release-event (GdkEvent) -> gboolean\n  touch-event (GdkEvent) -> gboolean\n  scroll-event (GdkEvent) -> gboolean\n  motion-notify-event (GdkEvent) -> gboolean\n  delete-event (GdkEvent) -> gboolean\n  destroy-event (GdkEvent) -> gboolean\n  key-press-event (GdkEvent) -> gboolean\n  key-release-event (GdkEvent) -> gboolean\n  enter-notify-event (GdkEvent) -> gboolean\n  leave-notify-event (GdkEvent) -> gboolean\n  configure-event (GdkEvent) -> gboolean\n  focus-in-event (GdkEvent) -> gboolean\n  focus-out-event (GdkEvent) -> gboolean\n  map-event (GdkEvent) -> gboolean\n  unmap-event (GdkEvent) -> gboolean\n  property-notify-event (GdkEvent) -> gboolean\n  selection-clear-event (GdkEvent) -> gboolean\n  selection-request-event (GdkEvent) -> gboolean\n  selection-notify-event (GdkEvent) -> gboolean\n  selection-received (GtkSelectionData, guint)\n  selection-get (GtkSelectionData, guint, guint)\n  proximity-in-event (GdkEvent) -> gboolean\n  proximity-out-event (GdkEvent) -> gboolean\n  drag-leave (GdkDragContext, guint)\n  drag-begin (GdkDragContext)\n  drag-end (GdkDragContext)\n  drag-data-delete (GdkDragContext)\n  drag-failed (GdkDragContext, GtkDragResult) -> gboolean\n  drag-motion (GdkDragContext, gint, gint, guint) -> gboolean\n  drag-drop (GdkDragContext, gint, gint, guint) -> gboolean\n  drag-data-get (GdkDragContext, GtkSelectionData, guint, guint)\n  drag-data-received (GdkDragContext, gint, gint, GtkSelectionData, guint, guint)\n  visibility-notify-event (GdkEvent) -> gboolean\n  window-state-event (GdkEvent) -> gboolean\n  damage-event (GdkEvent) -> gboolean\n  grab-broken-event (GdkEvent) -> gboolean\n  query-tooltip (gint, gint, gboolean, GtkTooltip) -> gboolean\n  popup-menu () -> gboolean\n  show-help (GtkWidgetHelpType) -> gboolean\n  accel-closures-changed ()\n  screen-changed (GdkScreen)\n  can-activate-accel (guint) -> gboolean\n\nProperties from GtkWidget:\n  name -> gchararray: Widget name\n    The name of the widget\n  parent -> GtkContainer: Parent widget\n    The parent widget of this widget. Must be a Container widget\n  width-request -> gint: Width request\n    Override for width request of the widget, or -1 if natural request should be used\n  height-request -> gint: Height request\n    Override for height request of the widget, or -1 if natural request should be used\n  visible -> gboolean: Visible\n    Whether the widget is visible\n  sensitive -> gboolean: Sensitive\n    Whether the widget responds to input\n  app-paintable -> gboolean: Application paintable\n    Whether the application will paint directly on the widget\n  can-focus -> gboolean: Can focus\n    Whether the widget can accept the input focus\n  has-focus -> gboolean: Has focus\n    Whether the widget has the input focus\n  is-focus -> gboolean: Is focus\n    Whether the widget is the focus widget within the toplevel\n  focus-on-click -> gboolean: Focus on click\n    Whether the widget should grab focus when it is clicked with the mouse\n  can-default -> gboolean: Can default\n    Whether the widget can be the default widget\n  has-default -> gboolean: Has default\n    Whether the widget is the default widget\n  receives-default -> gboolean: Receives default\n    If TRUE, the widget will receive the default action when it is focused\n  composite-child -> gboolean: Composite child\n    Whether the widget is part of a composite widget\n  style -> GtkStyle: Style\n    The style of the widget, which contains information about how it will look (colors etc)\n  events -> GdkEventMask: Events\n    The event mask that decides what kind of GdkEvents this widget gets\n  no-show-all -> gboolean: No show all\n    Whether gtk_widget_show_all() should not affect this widget\n  has-tooltip -> gboolean: Has tooltip\n    Whether this widget has a tooltip\n  tooltip-markup -> gchararray: Tooltip markup\n    The contents of the tooltip for this widget\n  tooltip-text -> gchararray: Tooltip Text\n    The contents of the tooltip for this widget\n  window -> GdkWindow: Window\n    The widget's window if it is realized\n  opacity -> gdouble: Opacity for Widget\n    The opacity of the widget, from 0 to 1\n  double-buffered -> gboolean: Double Buffered\n    Whether the widget is double buffered\n  halign -> GtkAlign: Horizontal Alignment\n    How to position in extra horizontal space\n  valign -> GtkAlign: Vertical Alignment\n    How to position in extra vertical space\n  margin-left -> gint: Margin on Left\n    Pixels of extra space on the left side\n  margin-right -> gint: Margin on Right\n    Pixels of extra space on the right side\n  margin-start -> gint: Margin on Start\n    Pixels of extra space on the start\n  margin-end -> gint: Margin on End\n    Pixels of extra space on the end\n  margin-top -> gint: Margin on Top\n    Pixels of extra space on the top side\n  margin-bottom -> gint: Margin on Bottom\n    Pixels of extra space on the bottom side\n  margin -> gint: All Margins\n    Pixels of extra space on all four sides\n  hexpand -> gboolean: Horizontal Expand\n    Whether widget wants more horizontal space\n  vexpand -> gboolean: Vertical Expand\n    Whether widget wants more vertical space\n  hexpand-set -> gboolean: Horizontal Expand Set\n    Whether to use the hexpand property\n  vexpand-set -> gboolean: Vertical Expand Set\n    Whether to use the vexpand property\n  expand -> gboolean: Expand Both\n    Whether widget wants to expand in both directions\n  scale-factor -> gint: Scale factor\n    The scaling factor of the window\n\nSignals from GObject:\n  notify (GParam)\n\n"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(ViewSwitcherTitle), '__module__': 'gi.repository.Handy', '__gtype__': <GType HdyViewSwitcherTitle (33365088)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new), 'get_icon_size': gi.FunctionInfo(get_icon_size), 'get_policy': gi.FunctionInfo(get_policy), 'get_stack': gi.FunctionInfo(get_stack), 'get_subtitle': gi.FunctionInfo(get_subtitle), 'get_title': gi.FunctionInfo(get_title), 'get_title_visible': gi.FunctionInfo(get_title_visible), 'get_view_switcher_enabled': gi.FunctionInfo(get_view_switcher_enabled), 'set_icon_size': gi.FunctionInfo(set_icon_size), 'set_policy': gi.FunctionInfo(set_policy), 'set_stack': gi.FunctionInfo(set_stack), 'set_subtitle': gi.FunctionInfo(set_subtitle), 'set_title': gi.FunctionInfo(set_title), 'set_view_switcher_enabled': gi.FunctionInfo(set_view_switcher_enabled), 'parent_instance': <property object at 0x7f2c96936ae8>})"
+    __gdoc__ = "Object HdyViewSwitcherTitle\n\nProperties from HdyViewSwitcherTitle:\n  policy -> HdyViewSwitcherPolicy: Policy\n    The policy to determine the mode to use\n  icon-size -> gint: Icon Size\n    Symbolic size to use for named icon\n  stack -> GtkStack: Stack\n    Stack\n  title -> gchararray: Title\n    The title to display\n  subtitle -> gchararray: Subtitle\n    The subtitle to display\n  view-switcher-enabled -> gboolean: View switcher enabled\n    Whether the view switcher is enabled\n  title-visible -> gboolean: Title visible\n    Whether the title label is visible\n\nSignals from GtkContainer:\n  add (GtkWidget)\n  remove (GtkWidget)\n  check-resize ()\n  set-focus-child (GtkWidget)\n\nProperties from GtkContainer:\n  border-width -> guint: Border width\n    The width of the empty border outside the containers children\n  resize-mode -> GtkResizeMode: Resize mode\n    Specify how resize events are handled\n  child -> GtkWidget: Child\n    Can be used to add a new child to the container\n\nSignals from GtkWidget:\n  composited-changed ()\n  destroy ()\n  show ()\n  hide ()\n  map ()\n  unmap ()\n  realize ()\n  unrealize ()\n  size-allocate (GdkRectangle)\n  state-changed (GtkStateType)\n  state-flags-changed (GtkStateFlags)\n  parent-set (GtkWidget)\n  hierarchy-changed (GtkWidget)\n  style-set (GtkStyle)\n  style-updated ()\n  direction-changed (GtkTextDirection)\n  grab-notify (gboolean)\n  child-notify (GParam)\n  draw (CairoContext) -> gboolean\n  mnemonic-activate (gboolean) -> gboolean\n  grab-focus ()\n  focus (GtkDirectionType) -> gboolean\n  move-focus (GtkDirectionType)\n  keynav-failed (GtkDirectionType) -> gboolean\n  event (GdkEvent) -> gboolean\n  event-after (GdkEvent)\n  button-press-event (GdkEvent) -> gboolean\n  button-release-event (GdkEvent) -> gboolean\n  touch-event (GdkEvent) -> gboolean\n  scroll-event (GdkEvent) -> gboolean\n  motion-notify-event (GdkEvent) -> gboolean\n  delete-event (GdkEvent) -> gboolean\n  destroy-event (GdkEvent) -> gboolean\n  key-press-event (GdkEvent) -> gboolean\n  key-release-event (GdkEvent) -> gboolean\n  enter-notify-event (GdkEvent) -> gboolean\n  leave-notify-event (GdkEvent) -> gboolean\n  configure-event (GdkEvent) -> gboolean\n  focus-in-event (GdkEvent) -> gboolean\n  focus-out-event (GdkEvent) -> gboolean\n  map-event (GdkEvent) -> gboolean\n  unmap-event (GdkEvent) -> gboolean\n  property-notify-event (GdkEvent) -> gboolean\n  selection-clear-event (GdkEvent) -> gboolean\n  selection-request-event (GdkEvent) -> gboolean\n  selection-notify-event (GdkEvent) -> gboolean\n  selection-received (GtkSelectionData, guint)\n  selection-get (GtkSelectionData, guint, guint)\n  proximity-in-event (GdkEvent) -> gboolean\n  proximity-out-event (GdkEvent) -> gboolean\n  drag-leave (GdkDragContext, guint)\n  drag-begin (GdkDragContext)\n  drag-end (GdkDragContext)\n  drag-data-delete (GdkDragContext)\n  drag-failed (GdkDragContext, GtkDragResult) -> gboolean\n  drag-motion (GdkDragContext, gint, gint, guint) -> gboolean\n  drag-drop (GdkDragContext, gint, gint, guint) -> gboolean\n  drag-data-get (GdkDragContext, GtkSelectionData, guint, guint)\n  drag-data-received (GdkDragContext, gint, gint, GtkSelectionData, guint, guint)\n  visibility-notify-event (GdkEvent) -> gboolean\n  window-state-event (GdkEvent) -> gboolean\n  damage-event (GdkEvent) -> gboolean\n  grab-broken-event (GdkEvent) -> gboolean\n  query-tooltip (gint, gint, gboolean, GtkTooltip) -> gboolean\n  popup-menu () -> gboolean\n  show-help (GtkWidgetHelpType) -> gboolean\n  accel-closures-changed ()\n  screen-changed (GdkScreen)\n  can-activate-accel (guint) -> gboolean\n\nProperties from GtkWidget:\n  name -> gchararray: Widget name\n    The name of the widget\n  parent -> GtkContainer: Parent widget\n    The parent widget of this widget. Must be a Container widget\n  width-request -> gint: Width request\n    Override for width request of the widget, or -1 if natural request should be used\n  height-request -> gint: Height request\n    Override for height request of the widget, or -1 if natural request should be used\n  visible -> gboolean: Visible\n    Whether the widget is visible\n  sensitive -> gboolean: Sensitive\n    Whether the widget responds to input\n  app-paintable -> gboolean: Application paintable\n    Whether the application will paint directly on the widget\n  can-focus -> gboolean: Can focus\n    Whether the widget can accept the input focus\n  has-focus -> gboolean: Has focus\n    Whether the widget has the input focus\n  is-focus -> gboolean: Is focus\n    Whether the widget is the focus widget within the toplevel\n  focus-on-click -> gboolean: Focus on click\n    Whether the widget should grab focus when it is clicked with the mouse\n  can-default -> gboolean: Can default\n    Whether the widget can be the default widget\n  has-default -> gboolean: Has default\n    Whether the widget is the default widget\n  receives-default -> gboolean: Receives default\n    If TRUE, the widget will receive the default action when it is focused\n  composite-child -> gboolean: Composite child\n    Whether the widget is part of a composite widget\n  style -> GtkStyle: Style\n    The style of the widget, which contains information about how it will look (colors etc)\n  events -> GdkEventMask: Events\n    The event mask that decides what kind of GdkEvents this widget gets\n  no-show-all -> gboolean: No show all\n    Whether gtk_widget_show_all() should not affect this widget\n  has-tooltip -> gboolean: Has tooltip\n    Whether this widget has a tooltip\n  tooltip-markup -> gchararray: Tooltip markup\n    The contents of the tooltip for this widget\n  tooltip-text -> gchararray: Tooltip Text\n    The contents of the tooltip for this widget\n  window -> GdkWindow: Window\n    The widget's window if it is realized\n  opacity -> gdouble: Opacity for Widget\n    The opacity of the widget, from 0 to 1\n  double-buffered -> gboolean: Double Buffered\n    Whether the widget is double buffered\n  halign -> GtkAlign: Horizontal Alignment\n    How to position in extra horizontal space\n  valign -> GtkAlign: Vertical Alignment\n    How to position in extra vertical space\n  margin-left -> gint: Margin on Left\n    Pixels of extra space on the left side\n  margin-right -> gint: Margin on Right\n    Pixels of extra space on the right side\n  margin-start -> gint: Margin on Start\n    Pixels of extra space on the start\n  margin-end -> gint: Margin on End\n    Pixels of extra space on the end\n  margin-top -> gint: Margin on Top\n    Pixels of extra space on the top side\n  margin-bottom -> gint: Margin on Bottom\n    Pixels of extra space on the bottom side\n  margin -> gint: All Margins\n    Pixels of extra space on all four sides\n  hexpand -> gboolean: Horizontal Expand\n    Whether widget wants more horizontal space\n  vexpand -> gboolean: Vertical Expand\n    Whether widget wants more vertical space\n  hexpand-set -> gboolean: Horizontal Expand Set\n    Whether to use the hexpand property\n  vexpand-set -> gboolean: Vertical Expand Set\n    Whether to use the vexpand property\n  expand -> gboolean: Expand Both\n    Whether widget wants to expand in both directions\n  scale-factor -> gint: Scale factor\n    The scaling factor of the window\n\nSignals from GObject:\n  notify (GParam)\n\n"
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType HdyDialerCycleButton (93893294983744)>'
-    __info__ = ObjectInfo(DialerCycleButton)
+    __gtype__ = None # (!) real value is '<GType HdyViewSwitcherTitle (33365088)>'
+    __info__ = ObjectInfo(ViewSwitcherTitle)
 
 

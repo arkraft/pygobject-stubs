@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Handy
-# from /usr/lib64/girepository-1.0/Handy-0.0.typelib
+# from /usr/lib/x86_64-linux-gnu/girepository-1.0/Handy-1.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -23,7 +23,7 @@ import gobject as __gobject
 
 _namespace = 'Handy'
 
-_version = '0.0'
+_version = '1'
 
 __weakref__ = None
 
@@ -41,20 +41,8 @@ def get_enable_animations(widget): # real signature unknown; restored from __doc
     """ get_enable_animations(widget:Gtk.Widget) -> bool """
     return False
 
-def init(argv=None): # real signature unknown; restored from __doc__
-    """ init(argv:list=None) -> bool, argv:list """
-    return False
-
-def list_box_separator_header(row, before=None, unused_user_data=None): # real signature unknown; restored from __doc__
-    """ list_box_separator_header(row:Gtk.ListBoxRow, before:Gtk.ListBoxRow=None, unused_user_data=None) """
-    pass
-
-def string_utf8_len(string): # real signature unknown; restored from __doc__
-    """ string_utf8_len(string:GLib.String) -> int """
-    return 0
-
-def string_utf8_truncate(string, len): # real signature unknown; restored from __doc__
-    """ string_utf8_truncate(string:GLib.String, len:int) -> GLib.String """
+def init(): # real signature unknown; restored from __doc__
+    """ init() """
     pass
 
 def __delattr__(*args, **kwargs): # real signature unknown
@@ -69,7 +57,7 @@ def __eq__(*args, **kwargs): # real signature unknown
     pass
 
 def __format__(*args, **kwargs): # real signature unknown
-    """ Default object formatter. """
+    """ default object formatter """
     pass
 
 def __getattribute__(*args, **kwargs): # real signature unknown
@@ -122,11 +110,11 @@ def __ne__(*args, **kwargs): # real signature unknown
     pass
 
 def __reduce_ex__(*args, **kwargs): # real signature unknown
-    """ Helper for pickle. """
+    """ helper for pickle """
     pass
 
 def __reduce__(*args, **kwargs): # real signature unknown
-    """ Helper for pickle. """
+    """ helper for pickle """
     pass
 
 def __repr__(*args, **kwargs): # real signature unknown
@@ -136,9 +124,12 @@ def __setattr__(*args, **kwargs): # real signature unknown
     """ Implement setattr(self, name, value). """
     pass
 
-def __sizeof__(*args, **kwargs): # real signature unknown
-    """ Size of object in memory, in bytes. """
-    pass
+def __sizeof__(): # real signature unknown; restored from __doc__
+    """
+    __sizeof__() -> int
+    size of object in memory, in bytes
+    """
+    return 0
 
 def __str__(*args, **kwargs): # real signature unknown
     """ Return str(self). """
@@ -160,47 +151,42 @@ def __subclasshook__(*args, **kwargs): # real signature unknown
 from .PreferencesRow import PreferencesRow
 from .ActionRow import ActionRow
 from .ActionRowClass import ActionRowClass
-from .Arrows import Arrows
-from .ArrowsClass import ArrowsClass
-from .ArrowsDirection import ArrowsDirection
+from .ApplicationWindow import ApplicationWindow
+from .ApplicationWindowClass import ApplicationWindowClass
+from .Avatar import Avatar
+from .AvatarClass import AvatarClass
+from .Swipeable import Swipeable
+from .Carousel import Carousel
+from .CarouselClass import CarouselClass
+from .CarouselIndicatorStyle import CarouselIndicatorStyle
 from .CenteringPolicy import CenteringPolicy
-from .Column import Column
-from .ColumnClass import ColumnClass
+from .Clamp import Clamp
+from .ClampClass import ClampClass
 from .ComboRow import ComboRow
 from .ComboRowClass import ComboRowClass
-from .Dialer import Dialer
-from .DialerButton import DialerButton
-from .DialerButtonClass import DialerButtonClass
-from .DialerClass import DialerClass
-from .DialerCycleButton import DialerCycleButton
-from .DialerCycleButtonClass import DialerCycleButtonClass
-from .Dialog import Dialog
-from .DialogClass import DialogClass
+from .Deck import Deck
+from .DeckClass import DeckClass
+from .DeckTransitionType import DeckTransitionType
 from .EnumValueObject import EnumValueObject
 from .EnumValueObjectClass import EnumValueObjectClass
 from .ExpanderRow import ExpanderRow
 from .ExpanderRowClass import ExpanderRowClass
-from .Fold import Fold
 from .HeaderBar import HeaderBar
 from .HeaderBarClass import HeaderBarClass
 from .HeaderGroup import HeaderGroup
 from .HeaderGroupClass import HeaderGroupClass
 from .Keypad import Keypad
 from .KeypadClass import KeypadClass
-from .Swipeable import Swipeable
 from .Leaflet import Leaflet
-from .LeafletChildTransitionType import LeafletChildTransitionType
 from .LeafletClass import LeafletClass
-from .LeafletModeTransitionType import LeafletModeTransitionType
 from .LeafletTransitionType import LeafletTransitionType
-from .Paginator import Paginator
-from .PaginatorClass import PaginatorClass
-from .PaginatorIndicatorStyle import PaginatorIndicatorStyle
+from .NavigationDirection import NavigationDirection
 from .PreferencesGroup import PreferencesGroup
 from .PreferencesGroupClass import PreferencesGroupClass
 from .PreferencesPage import PreferencesPage
 from .PreferencesPageClass import PreferencesPageClass
 from .PreferencesRowClass import PreferencesRowClass
+from .Window import Window
 from .PreferencesWindow import PreferencesWindow
 from .PreferencesWindowClass import PreferencesWindowClass
 from .SearchBar import SearchBar
@@ -211,6 +197,8 @@ from .SqueezerTransitionType import SqueezerTransitionType
 from .SwipeableInterface import SwipeableInterface
 from .SwipeGroup import SwipeGroup
 from .SwipeGroupClass import SwipeGroupClass
+from .SwipeTracker import SwipeTracker
+from .SwipeTrackerClass import SwipeTrackerClass
 from .TitleBar import TitleBar
 from .TitleBarClass import TitleBarClass
 from .ValueObject import ValueObject
@@ -220,14 +208,19 @@ from .ViewSwitcherBar import ViewSwitcherBar
 from .ViewSwitcherBarClass import ViewSwitcherBarClass
 from .ViewSwitcherClass import ViewSwitcherClass
 from .ViewSwitcherPolicy import ViewSwitcherPolicy
+from .ViewSwitcherTitle import ViewSwitcherTitle
+from .ViewSwitcherTitleClass import ViewSwitcherTitleClass
+from .WindowClass import WindowClass
+from .WindowHandle import WindowHandle
+from .WindowHandleClass import WindowHandleClass
 from .__class__ import __class__
 # variables with complex values
 
-__loader__ = None # (!) real value is '<gi.importer.DynamicImporter object at 0x7f4ea2dd7d00>'
+__loader__ = None # (!) real value is '<gi.importer.DynamicImporter object at 0x7f2ca1dcd4e0>'
 
 __path__ = [
-    '/usr/lib64/girepository-1.0/Handy-0.0.typelib',
+    '/usr/lib/x86_64-linux-gnu/girepository-1.0/Handy-1.typelib',
 ]
 
-__spec__ = None # (!) real value is "ModuleSpec(name='gi.repository.Handy', loader=<gi.importer.DynamicImporter object at 0x7f4ea2dd7d00>)"
+__spec__ = None # (!) real value is "ModuleSpec(name='gi.repository.Handy', loader=<gi.importer.DynamicImporter object at 0x7f2ca1dcd4e0>)"
 

@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Handy
-# from /usr/lib64/girepository-1.0/Handy-0.0.typelib
+# from /usr/lib/x86_64-linux-gnu/girepository-1.0/Handy-1.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -19,28 +19,31 @@ import gi.repository.Gtk as __gi_repository_Gtk
 import gobject as __gobject
 
 
-class DialerCycleButtonClass(__gi.Struct):
+class SwipeTrackerClass(__gi.Struct):
     """
     :Constructors:
     
     ::
     
-        DialerCycleButtonClass()
+        SwipeTrackerClass()
     """
     def __delattr__(self, *args, **kwargs): # real signature unknown
         """ Implement delattr(self, name). """
         pass
 
-    def __dir__(self, *args, **kwargs): # real signature unknown
-        """ Default dir() implementation. """
-        pass
+    def __dir__(self): # real signature unknown; restored from __doc__
+        """
+        __dir__() -> list
+        default dir() implementation
+        """
+        return []
 
     def __eq__(self, *args, **kwargs): # real signature unknown
         """ Return self==value. """
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
-        """ Default object formatter. """
+        """ default object formatter """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -89,11 +92,11 @@ class DialerCycleButtonClass(__gi.Struct):
         pass
 
     def __reduce_ex__(self, *args, **kwargs): # real signature unknown
-        """ Helper for pickle. """
+        """ helper for pickle """
         pass
 
     def __reduce__(self, *args, **kwargs): # real signature unknown
-        """ Helper for pickle. """
+        """ helper for pickle """
         pass
 
     def __repr__(self, *args, **kwargs): # real signature unknown
@@ -104,9 +107,12 @@ class DialerCycleButtonClass(__gi.Struct):
         """ Implement setattr(self, name, value). """
         pass
 
-    def __sizeof__(self, *args, **kwargs): # real signature unknown
-        """ Size of object in memory, in bytes. """
-        pass
+    def __sizeof__(self): # real signature unknown; restored from __doc__
+        """
+        __sizeof__() -> int
+        size of object in memory, in bytes
+        """
+        return 0
 
     def __str__(self, *args, **kwargs): # real signature unknown
         """ Return str(self). """
@@ -126,16 +132,12 @@ class DialerCycleButtonClass(__gi.Struct):
     def __weakref__(self, *args, **kwargs): # real signature unknown
         pass
 
-    cycle_end = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-
-    cycle_start = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-
     parent_class = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(DialerCycleButtonClass), '__module__': 'gi.repository.Handy', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'DialerCycleButtonClass' objects>, '__weakref__': <attribute '__weakref__' of 'DialerCycleButtonClass' objects>, '__doc__': None, 'parent_class': <property object at 0x7f4ea0d63540>, 'cycle_start': <property object at 0x7f4ea0d63630>, 'cycle_end': <property object at 0x7f4ea0d63720>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(SwipeTrackerClass), '__module__': 'gi.repository.Handy', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'SwipeTrackerClass' objects>, '__weakref__': <attribute '__weakref__' of 'SwipeTrackerClass' objects>, '__doc__': None, 'parent_class': <property object at 0x7f2c96b0d138>})"
     __gtype__ = None # (!) real value is '<GType void (4)>'
-    __info__ = StructInfo(DialerCycleButtonClass)
+    __info__ = StructInfo(SwipeTrackerClass)
 
 

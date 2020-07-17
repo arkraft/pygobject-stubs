@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Handy
-# from /usr/lib64/girepository-1.0/Handy-0.0.typelib
+# from /usr/lib/x86_64-linux-gnu/girepository-1.0/Handy-1.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -21,20 +21,55 @@ import gobject as __gobject
 
 class Swipeable(__gobject.GInterface):
     # no doc
+    def emit_child_switched(self, index, duration): # real signature unknown; restored from __doc__
+        """ emit_child_switched(self, index:int, duration:int) """
+        pass
+
+    def get_cancel_progress(self): # real signature unknown; restored from __doc__
+        """ get_cancel_progress(self) -> float """
+        return 0.0
+
+    def get_distance(self): # real signature unknown; restored from __doc__
+        """ get_distance(self) -> float """
+        return 0.0
+
+    def get_progress(self): # real signature unknown; restored from __doc__
+        """ get_progress(self) -> float """
+        return 0.0
+
+    def get_snap_points(self): # real signature unknown; restored from __doc__
+        """ get_snap_points(self) -> list, n_snap_points:int """
+        return []
+
+    def get_swipe_area(self): # real signature unknown; restored from __doc__
+        """ get_swipe_area(self) -> rect:Gdk.Rectangle """
+        pass
+
+    def get_swipe_tracker(self): # real signature unknown; restored from __doc__
+        """ get_swipe_tracker(self) -> Handy.SwipeTracker """
+        pass
+
+    def switch_child(self, index, duration): # real signature unknown; restored from __doc__
+        """ switch_child(self, index:int, duration:int) """
+        pass
+
     def __delattr__(self, *args, **kwargs): # real signature unknown
         """ Implement delattr(self, name). """
         pass
 
-    def __dir__(self, *args, **kwargs): # real signature unknown
-        """ Default dir() implementation. """
-        pass
+    def __dir__(self): # real signature unknown; restored from __doc__
+        """
+        __dir__() -> list
+        default dir() implementation
+        """
+        return []
 
     def __eq__(self, *args, **kwargs): # real signature unknown
         """ Return self==value. """
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
-        """ Default object formatter. """
+        """ default object formatter """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -83,11 +118,11 @@ class Swipeable(__gobject.GInterface):
         pass
 
     def __reduce_ex__(self, *args, **kwargs): # real signature unknown
-        """ Helper for pickle. """
+        """ helper for pickle """
         pass
 
     def __reduce__(self, *args, **kwargs): # real signature unknown
-        """ Helper for pickle. """
+        """ helper for pickle """
         pass
 
     def __repr__(self, *args, **kwargs): # real signature unknown
@@ -98,9 +133,12 @@ class Swipeable(__gobject.GInterface):
         """ Implement setattr(self, name, value). """
         pass
 
-    def __sizeof__(self, *args, **kwargs): # real signature unknown
-        """ Size of object in memory, in bytes. """
-        pass
+    def __sizeof__(self): # real signature unknown; restored from __doc__
+        """
+        __sizeof__() -> int
+        size of object in memory, in bytes
+        """
+        return 0
 
     def __str__(self, *args, **kwargs): # real signature unknown
         """ Return str(self). """
@@ -121,10 +159,10 @@ class Swipeable(__gobject.GInterface):
         pass
 
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': InterfaceInfo(Swipeable), '__module__': 'gi.repository.Handy', '__gtype__': <GType HdySwipeable (93893295095536)>, '__dict__': <attribute '__dict__' of 'Swipeable' objects>, '__weakref__': <attribute '__weakref__' of 'Swipeable' objects>, '__doc__': None, '__gsignals__': {}})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': InterfaceInfo(Swipeable), '__module__': 'gi.repository.Handy', '__gtype__': <GType HdySwipeable (33122112)>, '__dict__': <attribute '__dict__' of 'Swipeable' objects>, '__weakref__': <attribute '__weakref__' of 'Swipeable' objects>, '__doc__': None, '__gsignals__': {}, 'emit_child_switched': gi.FunctionInfo(emit_child_switched), 'get_cancel_progress': gi.FunctionInfo(get_cancel_progress), 'get_distance': gi.FunctionInfo(get_distance), 'get_progress': gi.FunctionInfo(get_progress), 'get_snap_points': gi.FunctionInfo(get_snap_points), 'get_swipe_area': gi.FunctionInfo(get_swipe_area), 'get_swipe_tracker': gi.FunctionInfo(get_swipe_tracker), 'switch_child': gi.FunctionInfo(switch_child)})"
     __gdoc__ = 'Interface HdySwipeable\n\nSignals from GObject:\n  notify (GParam)\n\n'
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType HdySwipeable (93893295095536)>'
+    __gtype__ = None # (!) real value is '<GType HdySwipeable (33122112)>'
     __info__ = InterfaceInfo(Swipeable)
 
 

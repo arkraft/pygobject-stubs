@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Handy
-# from /usr/lib64/girepository-1.0/Handy-0.0.typelib
+# from /usr/lib/x86_64-linux-gnu/girepository-1.0/Handy-1.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -26,7 +26,7 @@ class ViewSwitcherBar(__gi_repository_Gtk.Bin):
     ::
     
         ViewSwitcherBar(**properties)
-        new() -> Handy.ViewSwitcherBar
+        new() -> Gtk.Widget
     """
     def activate(self): # real signature unknown; restored from __doc__
         """ activate(self) -> bool """
@@ -196,7 +196,7 @@ class ViewSwitcherBar(__gi_repository_Gtk.Bin):
         return False
 
     def disconnect(*args, **kwargs): # reliably restored by inspect
-        """ signal_handler_disconnect(instance:GObject.Object, handler_id:int) """
+        # no doc
         pass
 
     def disconnect_by_func(self, *args, **kwargs): # real signature unknown
@@ -872,7 +872,7 @@ class ViewSwitcherBar(__gi_repository_Gtk.Bin):
         return 0
 
     def get_focus_chain(*args, **kwargs): # reliably restored by inspect
-        """ get_focus_chain(self) -> bool, focusable_widgets:list """
+        # no doc
         pass
 
     def get_focus_child(self): # real signature unknown; restored from __doc__
@@ -1201,15 +1201,15 @@ class ViewSwitcherBar(__gi_repository_Gtk.Bin):
         pass
 
     def handler_disconnect(*args, **kwargs): # reliably restored by inspect
-        """ signal_handler_disconnect(instance:GObject.Object, handler_id:int) """
+        # no doc
         pass
 
     def handler_is_connected(*args, **kwargs): # reliably restored by inspect
-        """ signal_handler_is_connected(instance:GObject.Object, handler_id:int) -> bool """
+        # no doc
         pass
 
     def handler_unblock(*args, **kwargs): # reliably restored by inspect
-        """ signal_handler_unblock(instance:GObject.Object, handler_id:int) """
+        # no doc
         pass
 
     def handler_unblock_by_func(self, *args, **kwargs): # real signature unknown
@@ -1400,7 +1400,7 @@ class ViewSwitcherBar(__gi_repository_Gtk.Bin):
         pass
 
     def new(self): # real signature unknown; restored from __doc__
-        """ new() -> Handy.ViewSwitcherBar """
+        """ new() -> Gtk.Widget """
         pass
 
     def newv(self, object_type, parameters): # real signature unknown; restored from __doc__
@@ -1898,7 +1898,7 @@ class ViewSwitcherBar(__gi_repository_Gtk.Bin):
         pass
 
     def stop_emission_by_name(*args, **kwargs): # reliably restored by inspect
-        """ signal_stop_emission_by_name(instance:GObject.Object, detailed_signal:str) """
+        # no doc
         pass
 
     def style_attach(self): # real signature unknown; restored from __doc__
@@ -1918,7 +1918,7 @@ class ViewSwitcherBar(__gi_repository_Gtk.Bin):
         pass
 
     def translate_coordinates(*args, **kwargs): # reliably restored by inspect
-        """ translate_coordinates(self, dest_widget:Gtk.Widget, src_x:int, src_y:int) -> bool, dest_x:int, dest_y:int """
+        # no doc
         pass
 
     def trigger_tooltip_query(self): # real signature unknown; restored from __doc__
@@ -2002,16 +2002,19 @@ class ViewSwitcherBar(__gi_repository_Gtk.Bin):
         """ Implement delattr(self, name). """
         pass
 
-    def __dir__(self, *args, **kwargs): # real signature unknown
-        """ Default dir() implementation. """
-        pass
+    def __dir__(self): # real signature unknown; restored from __doc__
+        """
+        __dir__() -> list
+        default dir() implementation
+        """
+        return []
 
     def __eq__(self, *args, **kwargs): # real signature unknown
         """ Return self==value. """
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
-        """ Default object formatter. """
+        """ default object formatter """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -2072,11 +2075,11 @@ class ViewSwitcherBar(__gi_repository_Gtk.Bin):
         pass
 
     def __reduce_ex__(self, *args, **kwargs): # real signature unknown
-        """ Helper for pickle. """
+        """ helper for pickle """
         pass
 
     def __reduce__(self, *args, **kwargs): # real signature unknown
-        """ Helper for pickle. """
+        """ helper for pickle """
         pass
 
     def __repr__(self, *args, **kwargs): # real signature unknown
@@ -2087,9 +2090,12 @@ class ViewSwitcherBar(__gi_repository_Gtk.Bin):
         """ Implement setattr(self, name, value). """
         pass
 
-    def __sizeof__(self, *args, **kwargs): # real signature unknown
-        """ Size of object in memory, in bytes. """
-        pass
+    def __sizeof__(self): # real signature unknown; restored from __doc__
+        """
+        __sizeof__() -> int
+        size of object in memory, in bytes
+        """
+        return 0
 
     def __str__(self, *args, **kwargs): # real signature unknown
         """ Return str(self). """
@@ -2128,12 +2134,12 @@ class ViewSwitcherBar(__gi_repository_Gtk.Bin):
     __grefcount__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
-    props = None # (!) real value is '<gi._gi.GProps object at 0x7f4ea079e700>'
+    props = None # (!) real value is '<gi._gi.GProps object at 0x7f2c963480b8>'
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(ViewSwitcherBar), '__module__': 'gi.repository.Handy', '__gtype__': <GType HdyViewSwitcherBar (93893295295344)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new), 'get_icon_size': gi.FunctionInfo(get_icon_size), 'get_policy': gi.FunctionInfo(get_policy), 'get_reveal': gi.FunctionInfo(get_reveal), 'get_stack': gi.FunctionInfo(get_stack), 'set_icon_size': gi.FunctionInfo(set_icon_size), 'set_policy': gi.FunctionInfo(set_policy), 'set_reveal': gi.FunctionInfo(set_reveal), 'set_stack': gi.FunctionInfo(set_stack), 'parent_instance': <property object at 0x7f4ea0d759f0>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(ViewSwitcherBar), '__module__': 'gi.repository.Handy', '__gtype__': <GType HdyViewSwitcherBar (33178304)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new), 'get_icon_size': gi.FunctionInfo(get_icon_size), 'get_policy': gi.FunctionInfo(get_policy), 'get_reveal': gi.FunctionInfo(get_reveal), 'get_stack': gi.FunctionInfo(get_stack), 'set_icon_size': gi.FunctionInfo(set_icon_size), 'set_policy': gi.FunctionInfo(set_policy), 'set_reveal': gi.FunctionInfo(set_reveal), 'set_stack': gi.FunctionInfo(set_stack), 'parent_instance': <property object at 0x7f2c96a61728>})"
     __gdoc__ = "Object HdyViewSwitcherBar\n\nProperties from HdyViewSwitcherBar:\n  policy -> HdyViewSwitcherPolicy: Policy\n    The policy to determine the mode to use\n  icon-size -> gint: Icon Size\n    Symbolic size to use for named icon\n  stack -> GtkStack: Stack\n    Stack\n  reveal -> gboolean: Reveal\n    Whether the view switcher is revealed\n\nSignals from GtkContainer:\n  add (GtkWidget)\n  remove (GtkWidget)\n  check-resize ()\n  set-focus-child (GtkWidget)\n\nProperties from GtkContainer:\n  border-width -> guint: Border width\n    The width of the empty border outside the containers children\n  resize-mode -> GtkResizeMode: Resize mode\n    Specify how resize events are handled\n  child -> GtkWidget: Child\n    Can be used to add a new child to the container\n\nSignals from GtkWidget:\n  composited-changed ()\n  destroy ()\n  show ()\n  hide ()\n  map ()\n  unmap ()\n  realize ()\n  unrealize ()\n  size-allocate (GdkRectangle)\n  state-changed (GtkStateType)\n  state-flags-changed (GtkStateFlags)\n  parent-set (GtkWidget)\n  hierarchy-changed (GtkWidget)\n  style-set (GtkStyle)\n  style-updated ()\n  direction-changed (GtkTextDirection)\n  grab-notify (gboolean)\n  child-notify (GParam)\n  draw (CairoContext) -> gboolean\n  mnemonic-activate (gboolean) -> gboolean\n  grab-focus ()\n  focus (GtkDirectionType) -> gboolean\n  move-focus (GtkDirectionType)\n  keynav-failed (GtkDirectionType) -> gboolean\n  event (GdkEvent) -> gboolean\n  event-after (GdkEvent)\n  button-press-event (GdkEvent) -> gboolean\n  button-release-event (GdkEvent) -> gboolean\n  touch-event (GdkEvent) -> gboolean\n  scroll-event (GdkEvent) -> gboolean\n  motion-notify-event (GdkEvent) -> gboolean\n  delete-event (GdkEvent) -> gboolean\n  destroy-event (GdkEvent) -> gboolean\n  key-press-event (GdkEvent) -> gboolean\n  key-release-event (GdkEvent) -> gboolean\n  enter-notify-event (GdkEvent) -> gboolean\n  leave-notify-event (GdkEvent) -> gboolean\n  configure-event (GdkEvent) -> gboolean\n  focus-in-event (GdkEvent) -> gboolean\n  focus-out-event (GdkEvent) -> gboolean\n  map-event (GdkEvent) -> gboolean\n  unmap-event (GdkEvent) -> gboolean\n  property-notify-event (GdkEvent) -> gboolean\n  selection-clear-event (GdkEvent) -> gboolean\n  selection-request-event (GdkEvent) -> gboolean\n  selection-notify-event (GdkEvent) -> gboolean\n  selection-received (GtkSelectionData, guint)\n  selection-get (GtkSelectionData, guint, guint)\n  proximity-in-event (GdkEvent) -> gboolean\n  proximity-out-event (GdkEvent) -> gboolean\n  drag-leave (GdkDragContext, guint)\n  drag-begin (GdkDragContext)\n  drag-end (GdkDragContext)\n  drag-data-delete (GdkDragContext)\n  drag-failed (GdkDragContext, GtkDragResult) -> gboolean\n  drag-motion (GdkDragContext, gint, gint, guint) -> gboolean\n  drag-drop (GdkDragContext, gint, gint, guint) -> gboolean\n  drag-data-get (GdkDragContext, GtkSelectionData, guint, guint)\n  drag-data-received (GdkDragContext, gint, gint, GtkSelectionData, guint, guint)\n  visibility-notify-event (GdkEvent) -> gboolean\n  window-state-event (GdkEvent) -> gboolean\n  damage-event (GdkEvent) -> gboolean\n  grab-broken-event (GdkEvent) -> gboolean\n  query-tooltip (gint, gint, gboolean, GtkTooltip) -> gboolean\n  popup-menu () -> gboolean\n  show-help (GtkWidgetHelpType) -> gboolean\n  accel-closures-changed ()\n  screen-changed (GdkScreen)\n  can-activate-accel (guint) -> gboolean\n\nProperties from GtkWidget:\n  name -> gchararray: Widget name\n    The name of the widget\n  parent -> GtkContainer: Parent widget\n    The parent widget of this widget. Must be a Container widget\n  width-request -> gint: Width request\n    Override for width request of the widget, or -1 if natural request should be used\n  height-request -> gint: Height request\n    Override for height request of the widget, or -1 if natural request should be used\n  visible -> gboolean: Visible\n    Whether the widget is visible\n  sensitive -> gboolean: Sensitive\n    Whether the widget responds to input\n  app-paintable -> gboolean: Application paintable\n    Whether the application will paint directly on the widget\n  can-focus -> gboolean: Can focus\n    Whether the widget can accept the input focus\n  has-focus -> gboolean: Has focus\n    Whether the widget has the input focus\n  is-focus -> gboolean: Is focus\n    Whether the widget is the focus widget within the toplevel\n  focus-on-click -> gboolean: Focus on click\n    Whether the widget should grab focus when it is clicked with the mouse\n  can-default -> gboolean: Can default\n    Whether the widget can be the default widget\n  has-default -> gboolean: Has default\n    Whether the widget is the default widget\n  receives-default -> gboolean: Receives default\n    If TRUE, the widget will receive the default action when it is focused\n  composite-child -> gboolean: Composite child\n    Whether the widget is part of a composite widget\n  style -> GtkStyle: Style\n    The style of the widget, which contains information about how it will look (colors etc)\n  events -> GdkEventMask: Events\n    The event mask that decides what kind of GdkEvents this widget gets\n  no-show-all -> gboolean: No show all\n    Whether gtk_widget_show_all() should not affect this widget\n  has-tooltip -> gboolean: Has tooltip\n    Whether this widget has a tooltip\n  tooltip-markup -> gchararray: Tooltip markup\n    The contents of the tooltip for this widget\n  tooltip-text -> gchararray: Tooltip Text\n    The contents of the tooltip for this widget\n  window -> GdkWindow: Window\n    The widget's window if it is realized\n  opacity -> gdouble: Opacity for Widget\n    The opacity of the widget, from 0 to 1\n  double-buffered -> gboolean: Double Buffered\n    Whether the widget is double buffered\n  halign -> GtkAlign: Horizontal Alignment\n    How to position in extra horizontal space\n  valign -> GtkAlign: Vertical Alignment\n    How to position in extra vertical space\n  margin-left -> gint: Margin on Left\n    Pixels of extra space on the left side\n  margin-right -> gint: Margin on Right\n    Pixels of extra space on the right side\n  margin-start -> gint: Margin on Start\n    Pixels of extra space on the start\n  margin-end -> gint: Margin on End\n    Pixels of extra space on the end\n  margin-top -> gint: Margin on Top\n    Pixels of extra space on the top side\n  margin-bottom -> gint: Margin on Bottom\n    Pixels of extra space on the bottom side\n  margin -> gint: All Margins\n    Pixels of extra space on all four sides\n  hexpand -> gboolean: Horizontal Expand\n    Whether widget wants more horizontal space\n  vexpand -> gboolean: Vertical Expand\n    Whether widget wants more vertical space\n  hexpand-set -> gboolean: Horizontal Expand Set\n    Whether to use the hexpand property\n  vexpand-set -> gboolean: Vertical Expand Set\n    Whether to use the vexpand property\n  expand -> gboolean: Expand Both\n    Whether widget wants to expand in both directions\n  scale-factor -> gint: Scale factor\n    The scaling factor of the window\n\nSignals from GObject:\n  notify (GParam)\n\n"
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType HdyViewSwitcherBar (93893295295344)>'
+    __gtype__ = None # (!) real value is '<GType HdyViewSwitcherBar (33178304)>'
     __info__ = ObjectInfo(ViewSwitcherBar)
 
 

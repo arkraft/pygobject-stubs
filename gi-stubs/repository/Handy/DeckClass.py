@@ -19,13 +19,13 @@ import gi.repository.Gtk as __gi_repository_Gtk
 import gobject as __gobject
 
 
-class TitleBarClass(__gi.Struct):
+class DeckClass(__gi.Struct):
     """
     :Constructors:
     
     ::
     
-        TitleBarClass()
+        DeckClass()
     """
     def __delattr__(self, *args, **kwargs): # real signature unknown
         """ Implement delattr(self, name). """
@@ -136,8 +136,8 @@ class TitleBarClass(__gi.Struct):
 
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(TitleBarClass), '__module__': 'gi.repository.Handy', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'TitleBarClass' objects>, '__weakref__': <attribute '__weakref__' of 'TitleBarClass' objects>, '__doc__': None, 'parent_class': <property object at 0x7f2c96aa1d68>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(DeckClass), '__module__': 'gi.repository.Handy', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'DeckClass' objects>, '__weakref__': <attribute '__weakref__' of 'DeckClass' objects>, '__doc__': None, 'parent_class': <property object at 0x7f2c96a4b3b8>})"
     __gtype__ = None # (!) real value is '<GType void (4)>'
-    __info__ = StructInfo(TitleBarClass)
+    __info__ = StructInfo(DeckClass)
 
 

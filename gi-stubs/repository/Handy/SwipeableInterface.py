@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Handy
-# from /usr/lib64/girepository-1.0/Handy-0.0.typelib
+# from /usr/lib/x86_64-linux-gnu/girepository-1.0/Handy-1.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -31,16 +31,19 @@ class SwipeableInterface(__gi.Struct):
         """ Implement delattr(self, name). """
         pass
 
-    def __dir__(self, *args, **kwargs): # real signature unknown
-        """ Default dir() implementation. """
-        pass
+    def __dir__(self): # real signature unknown; restored from __doc__
+        """
+        __dir__() -> list
+        default dir() implementation
+        """
+        return []
 
     def __eq__(self, *args, **kwargs): # real signature unknown
         """ Return self==value. """
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
-        """ Default object formatter. """
+        """ default object formatter """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -89,11 +92,11 @@ class SwipeableInterface(__gi.Struct):
         pass
 
     def __reduce_ex__(self, *args, **kwargs): # real signature unknown
-        """ Helper for pickle. """
+        """ helper for pickle """
         pass
 
     def __reduce__(self, *args, **kwargs): # real signature unknown
-        """ Helper for pickle. """
+        """ helper for pickle """
         pass
 
     def __repr__(self, *args, **kwargs): # real signature unknown
@@ -104,9 +107,12 @@ class SwipeableInterface(__gi.Struct):
         """ Implement setattr(self, name, value). """
         pass
 
-    def __sizeof__(self, *args, **kwargs): # real signature unknown
-        """ Size of object in memory, in bytes. """
-        pass
+    def __sizeof__(self): # real signature unknown; restored from __doc__
+        """
+        __sizeof__() -> int
+        size of object in memory, in bytes
+        """
+        return 0
 
     def __str__(self, *args, **kwargs): # real signature unknown
         """ Return str(self). """
@@ -126,19 +132,25 @@ class SwipeableInterface(__gi.Struct):
     def __weakref__(self, *args, **kwargs): # real signature unknown
         pass
 
-    begin_swipe = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
+    get_cancel_progress = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
-    end_swipe = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
+    get_distance = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
+
+    get_progress = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
+
+    get_snap_points = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
+
+    get_swipe_area = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
+
+    get_swipe_tracker = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
     parent = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
     switch_child = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
-    update_swipe = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-
 
     __class__ = None # (!) real value is "<class 'gi.types.StructMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(SwipeableInterface), '__module__': 'gi.repository.Handy', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'SwipeableInterface' objects>, '__weakref__': <attribute '__weakref__' of 'SwipeableInterface' objects>, '__doc__': None, 'parent': <property object at 0x7f4ea0d73d10>, 'switch_child': <property object at 0x7f4ea0d73e00>, 'begin_swipe': <property object at 0x7f4ea0d73ef0>, 'update_swipe': <property object at 0x7f4ea0d75040>, 'end_swipe': <property object at 0x7f4ea0d75130>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': StructInfo(SwipeableInterface), '__module__': 'gi.repository.Handy', '__gtype__': <GType void (4)>, '__dict__': <attribute '__dict__' of 'SwipeableInterface' objects>, '__weakref__': <attribute '__weakref__' of 'SwipeableInterface' objects>, '__doc__': None, 'parent': <property object at 0x7f2c96b0d318>, 'switch_child': <property object at 0x7f2c96a982c8>, 'get_swipe_tracker': <property object at 0x7f2c96a988b8>, 'get_distance': <property object at 0x7f2c96a98b88>, 'get_snap_points': <property object at 0x7f2c96a98db8>, 'get_progress': <property object at 0x7f2c96a98ea8>, 'get_cancel_progress': <property object at 0x7f2c96a98f98>, 'get_swipe_area': <property object at 0x7f2c96aa1c78>})"
     __gtype__ = None # (!) real value is '<GType void (4)>'
     __info__ = StructInfo(SwipeableInterface)
 

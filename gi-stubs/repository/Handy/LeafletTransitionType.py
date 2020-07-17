@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Handy
-# from /usr/lib64/girepository-1.0/Handy-0.0.typelib
+# from /usr/lib/x86_64-linux-gnu/girepository-1.0/Handy-1.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -21,74 +21,60 @@ import gobject as __gobject
 
 class LeafletTransitionType(__gobject.GEnum):
     # no doc
-    def as_integer_ratio(self): # real signature unknown; restored from __doc__
-        """
-        Return integer ratio.
-        
-        Return a pair of integers, whose ratio is exactly equal to the original int
-        and with a positive denominator.
-        
-        >>> (10).as_integer_ratio()
-        (10, 1)
-        >>> (-10).as_integer_ratio()
-        (-10, 1)
-        >>> (0).as_integer_ratio()
-        (0, 1)
-        """
-        pass
-
     def bit_length(self): # real signature unknown; restored from __doc__
         """
-        Number of bits necessary to represent self in binary.
+        int.bit_length() -> int
         
+        Number of bits necessary to represent self in binary.
         >>> bin(37)
         '0b100101'
         >>> (37).bit_length()
         6
         """
-        pass
+        return 0
 
     def conjugate(self, *args, **kwargs): # real signature unknown
         """ Returns self, the complex conjugate of any int. """
         pass
 
-    def from_bytes(self, *args, **kwargs): # real signature unknown
+    def from_bytes(self, bytes, byteorder, *args, **kwargs): # real signature unknown; NOTE: unreliably restored from __doc__ 
         """
+        int.from_bytes(bytes, byteorder, *, signed=False) -> int
+        
         Return the integer represented by the given array of bytes.
         
-          bytes
-            Holds the array of bytes to convert.  The argument must either
-            support the buffer protocol or be an iterable object producing bytes.
-            Bytes and bytearray are examples of built-in objects that support the
-            buffer protocol.
-          byteorder
-            The byte order used to represent the integer.  If byteorder is 'big',
-            the most significant byte is at the beginning of the byte array.  If
-            byteorder is 'little', the most significant byte is at the end of the
-            byte array.  To request the native byte order of the host system, use
-            `sys.byteorder' as the byte order value.
-          signed
-            Indicates whether two's complement is used to represent the integer.
+        The bytes argument must be a bytes-like object (e.g. bytes or bytearray).
+        
+        The byteorder argument determines the byte order used to represent the
+        integer.  If byteorder is 'big', the most significant byte is at the
+        beginning of the byte array.  If byteorder is 'little', the most
+        significant byte is at the end of the byte array.  To request the native
+        byte order of the host system, use `sys.byteorder' as the byte order value.
+        
+        The signed keyword-only argument indicates whether two's complement is
+        used to represent the integer.
         """
         pass
 
-    def to_bytes(self, *args, **kwargs): # real signature unknown
+    def to_bytes(self, length, byteorder, *args, **kwargs): # real signature unknown; NOTE: unreliably restored from __doc__ 
         """
+        int.to_bytes(length, byteorder, *, signed=False) -> bytes
+        
         Return an array of bytes representing an integer.
         
-          length
-            Length of bytes object to use.  An OverflowError is raised if the
-            integer is not representable with the given number of bytes.
-          byteorder
-            The byte order used to represent the integer.  If byteorder is 'big',
-            the most significant byte is at the beginning of the byte array.  If
-            byteorder is 'little', the most significant byte is at the end of the
-            byte array.  To request the native byte order of the host system, use
-            `sys.byteorder' as the byte order value.
-          signed
-            Determines whether two's complement is used to represent the integer.
-            If signed is False and a negative integer is given, an OverflowError
-            is raised.
+        The integer is represented using length bytes.  An OverflowError is
+        raised if the integer is not representable with the given number of
+        bytes.
+        
+        The byteorder argument determines the byte order used to represent the
+        integer.  If byteorder is 'big', the most significant byte is at the
+        beginning of the byte array.  If byteorder is 'little', the most
+        significant byte is at the end of the byte array.  To request the native
+        byte order of the host system, use `sys.byteorder' as the byte order value.
+        
+        The signed keyword-only argument determines whether two's complement is
+        used to represent the integer.  If signed is False and a negative integer
+        is given, an OverflowError is raised.
         """
         pass
 
@@ -116,9 +102,12 @@ class LeafletTransitionType(__gobject.GEnum):
         """ Implement delattr(self, name). """
         pass
 
-    def __dir__(self, *args, **kwargs): # real signature unknown
-        """ Default dir() implementation. """
-        pass
+    def __dir__(self): # real signature unknown; restored from __doc__
+        """
+        __dir__() -> list
+        default dir() implementation
+        """
+        return []
 
     def __divmod__(self, *args, **kwargs): # real signature unknown
         """ Return divmod(self, value). """
@@ -244,7 +233,7 @@ class LeafletTransitionType(__gobject.GEnum):
         pass
 
     def __reduce_ex__(self, *args, **kwargs): # real signature unknown
-        """ Helper for pickle. """
+        """ helper for pickle """
         pass
 
     def __reduce__(self, *args, **kwargs): # real signature unknown
@@ -310,7 +299,7 @@ class LeafletTransitionType(__gobject.GEnum):
         pass
 
     def __sizeof__(self, *args, **kwargs): # real signature unknown
-        """ Returns size in memory, in bytes. """
+        """ Returns size in memory, in bytes """
         pass
 
     def __str__(self, *args, **kwargs): # real signature unknown
@@ -361,19 +350,17 @@ class LeafletTransitionType(__gobject.GEnum):
     value_nick = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
-    NONE = 0
-    OVER = 2
-    SLIDE = 1
-    UNDER = 3
+    OVER = 0
+    SLIDE = 2
+    UNDER = 1
     __class__ = type
-    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Handy', '__dict__': <attribute '__dict__' of 'LeafletTransitionType' objects>, '__doc__': None, '__gtype__': <GType HdyLeafletTransitionType (93893295084928)>, '__enum_values__': {0: <enum HDY_LEAFLET_TRANSITION_TYPE_NONE of type Handy.LeafletTransitionType>, 1: <enum HDY_LEAFLET_TRANSITION_TYPE_SLIDE of type Handy.LeafletTransitionType>, 2: <enum HDY_LEAFLET_TRANSITION_TYPE_OVER of type Handy.LeafletTransitionType>, 3: <enum HDY_LEAFLET_TRANSITION_TYPE_UNDER of type Handy.LeafletTransitionType>}, '__info__': gi.EnumInfo(LeafletTransitionType), 'NONE': <enum HDY_LEAFLET_TRANSITION_TYPE_NONE of type Handy.LeafletTransitionType>, 'SLIDE': <enum HDY_LEAFLET_TRANSITION_TYPE_SLIDE of type Handy.LeafletTransitionType>, 'OVER': <enum HDY_LEAFLET_TRANSITION_TYPE_OVER of type Handy.LeafletTransitionType>, 'UNDER': <enum HDY_LEAFLET_TRANSITION_TYPE_UNDER of type Handy.LeafletTransitionType>})"
+    __dict__ = None # (!) real value is "mappingproxy({'__module__': 'gi.repository.Handy', '__dict__': <attribute '__dict__' of 'LeafletTransitionType' objects>, '__doc__': None, '__gtype__': <GType HdyLeafletTransitionType (33357664)>, '__enum_values__': {0: <enum HDY_LEAFLET_TRANSITION_TYPE_OVER of type Handy.LeafletTransitionType>, 1: <enum HDY_LEAFLET_TRANSITION_TYPE_UNDER of type Handy.LeafletTransitionType>, 2: <enum HDY_LEAFLET_TRANSITION_TYPE_SLIDE of type Handy.LeafletTransitionType>}, '__info__': gi.EnumInfo(LeafletTransitionType), 'OVER': <enum HDY_LEAFLET_TRANSITION_TYPE_OVER of type Handy.LeafletTransitionType>, 'UNDER': <enum HDY_LEAFLET_TRANSITION_TYPE_UNDER of type Handy.LeafletTransitionType>, 'SLIDE': <enum HDY_LEAFLET_TRANSITION_TYPE_SLIDE of type Handy.LeafletTransitionType>})"
     __enum_values__ = {
         0: 0,
         1: 1,
         2: 2,
-        3: 3,
     }
-    __gtype__ = None # (!) real value is '<GType HdyLeafletTransitionType (93893295084928)>'
+    __gtype__ = None # (!) real value is '<GType HdyLeafletTransitionType (33357664)>'
     __info__ = gi.EnumInfo(LeafletTransitionType)
 
 

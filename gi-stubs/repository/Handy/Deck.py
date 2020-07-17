@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Handy
-# from /usr/lib64/girepository-1.0/Handy-0.0.typelib
+# from /usr/lib/x86_64-linux-gnu/girepository-1.0/Handy-1.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -19,18 +19,24 @@ import gi.repository.Gtk as __gi_repository_Gtk
 import gobject as __gobject
 
 
-class Arrows(__gi_repository_Gtk.DrawingArea):
+from .Swipeable import Swipeable
+
+class Deck(__gi_overrides_Gtk.Container, __gi_repository_Gtk.Orientable, Swipeable):
     """
     :Constructors:
     
     ::
     
-        Arrows(**properties)
+        Deck(**properties)
         new() -> Gtk.Widget
     """
     def activate(self): # real signature unknown; restored from __doc__
         """ activate(self) -> bool """
         return False
+
+    def add(self, widget): # real signature unknown; restored from __doc__
+        """ add(self, widget:Gtk.Widget) """
+        pass
 
     def add_accelerator(self, accel_signal, accel_group, accel_key, accel_mods, accel_flags): # real signature unknown; restored from __doc__
         """ add_accelerator(self, accel_signal:str, accel_group:Gtk.AccelGroup, accel_key:int, accel_mods:Gdk.ModifierType, accel_flags:Gtk.AccelFlags) """
@@ -56,10 +62,6 @@ class Arrows(__gi_repository_Gtk.DrawingArea):
         """ add_tick_callback(self, callback:Gtk.TickCallback, user_data=None) -> int """
         return 0
 
-    def animate(self): # real signature unknown; restored from __doc__
-        """ animate(self) """
-        pass
-
     def bind_property(self, *args, **kwargs): # real signature unknown
         pass
 
@@ -82,12 +84,40 @@ class Arrows(__gi_repository_Gtk.DrawingArea):
     def chain(self, *args, **kwargs): # real signature unknown
         pass
 
+    def check_resize(self): # real signature unknown; restored from __doc__
+        """ check_resize(self) """
+        pass
+
     def child_focus(self, direction): # real signature unknown; restored from __doc__
         """ child_focus(self, direction:Gtk.DirectionType) -> bool """
         return False
 
-    def child_notify(self, child_property): # real signature unknown; restored from __doc__
-        """ child_notify(self, child_property:str) """
+    def child_get(self, child, *prop_names): # reliably restored by inspect
+        """ Returns a list of child property values for the given names. """
+        pass
+
+    def child_get_property(self, child, property_name, value=None): # reliably restored by inspect
+        # no doc
+        pass
+
+    def child_notify(self, child, child_property): # real signature unknown; restored from __doc__
+        """ child_notify(self, child:Gtk.Widget, child_property:str) """
+        pass
+
+    def child_notify_by_pspec(self, child, pspec): # real signature unknown; restored from __doc__
+        """ child_notify_by_pspec(self, child:Gtk.Widget, pspec:GObject.ParamSpec) """
+        pass
+
+    def child_set(self, child, **kwargs): # reliably restored by inspect
+        """ Set a child properties on the given child to key/value pairs. """
+        pass
+
+    def child_set_property(self, child, property_name, value): # real signature unknown; restored from __doc__
+        """ child_set_property(self, child:Gtk.Widget, property_name:str, value:GObject.Value) """
+        pass
+
+    def child_type(self): # real signature unknown; restored from __doc__
+        """ child_type(self) -> GType """
         pass
 
     def class_path(self): # real signature unknown; restored from __doc__
@@ -168,10 +198,14 @@ class Arrows(__gi_repository_Gtk.DrawingArea):
         return False
 
     def disconnect(*args, **kwargs): # reliably restored by inspect
-        """ signal_handler_disconnect(instance:GObject.Object, handler_id:int) """
+        # no doc
         pass
 
     def disconnect_by_func(self, *args, **kwargs): # real signature unknown
+        pass
+
+    def do_add(self, *args, **kwargs): # real signature unknown
+        """ add(self, widget:Gtk.Widget) """
         pass
 
     def do_adjust_baseline_allocation(self, *args, **kwargs): # real signature unknown
@@ -202,12 +236,24 @@ class Arrows(__gi_repository_Gtk.DrawingArea):
         """ can_activate_accel(self, signal_id:int) -> bool """
         pass
 
+    def do_check_resize(self, *args, **kwargs): # real signature unknown
+        """ check_resize(self) """
+        pass
+
     def do_child_notify(self, *args, **kwargs): # real signature unknown
         """ child_notify(self, child_property:GObject.ParamSpec) """
         pass
 
+    def do_child_type(self, *args, **kwargs): # real signature unknown
+        """ child_type(self) -> GType """
+        pass
+
     def do_composited_changed(self, *args, **kwargs): # real signature unknown
         """ composited_changed(self) """
+        pass
+
+    def do_composite_name(self, *args, **kwargs): # real signature unknown
+        """ composite_name(self, child:Gtk.Widget) -> str """
         pass
 
     def do_compute_expand(self, *args, **kwargs): # real signature unknown
@@ -302,8 +348,20 @@ class Arrows(__gi_repository_Gtk.DrawingArea):
         """ focus_out_event(self, event:Gdk.EventFocus) -> bool """
         pass
 
+    def do_forall(self, *args, **kwargs): # real signature unknown
+        """ forall(self, include_internals:bool, callback:Gtk.Callback, callback_data=None) """
+        pass
+
     def do_get_accessible(self, *args, **kwargs): # real signature unknown
         """ get_accessible(self) -> Atk.Object """
+        pass
+
+    def do_get_child_property(self, *args, **kwargs): # real signature unknown
+        """ get_child_property(self, child:Gtk.Widget, property_id:int, value:GObject.Value, pspec:GObject.ParamSpec) """
+        pass
+
+    def do_get_path_for_child(self, *args, **kwargs): # real signature unknown
+        """ get_path_for_child(self, child:Gtk.Widget) -> Gtk.WidgetPath """
         pass
 
     def do_get_preferred_height(self, *args, **kwargs): # real signature unknown
@@ -418,6 +476,10 @@ class Arrows(__gi_repository_Gtk.DrawingArea):
         """ realize(self) """
         pass
 
+    def do_remove(self, *args, **kwargs): # real signature unknown
+        """ remove(self, widget:Gtk.Widget) """
+        pass
+
     def do_screen_changed(self, *args, **kwargs): # real signature unknown
         """ screen_changed(self, previous_screen:Gdk.Screen) """
         pass
@@ -444,6 +506,14 @@ class Arrows(__gi_repository_Gtk.DrawingArea):
 
     def do_selection_request_event(self, *args, **kwargs): # real signature unknown
         """ selection_request_event(self, event:Gdk.EventSelection) -> bool """
+        pass
+
+    def do_set_child_property(self, *args, **kwargs): # real signature unknown
+        """ set_child_property(self, child:Gtk.Widget, property_id:int, value:GObject.Value, pspec:GObject.ParamSpec) """
+        pass
+
+    def do_set_focus_child(self, *args, **kwargs): # real signature unknown
+        """ set_focus_child(self, child:Gtk.Widget=None) """
         pass
 
     def do_show(self, *args, **kwargs): # real signature unknown
@@ -621,6 +691,10 @@ class Arrows(__gi_repository_Gtk.DrawingArea):
     def emit(self, *args, **kwargs): # real signature unknown
         pass
 
+    def emit_child_switched(self, index, duration): # real signature unknown; restored from __doc__
+        """ emit_child_switched(self, index:int, duration:int) """
+        pass
+
     def emit_stop_by_name(self, detailed_signal): # reliably restored by inspect
         """ Deprecated, please use stop_emission_by_name. """
         pass
@@ -637,6 +711,10 @@ class Arrows(__gi_repository_Gtk.DrawingArea):
         """ event(self, event:Gdk.Event) -> bool """
         return False
 
+    def find_child_property(self, property_name): # real signature unknown; restored from __doc__
+        """ find_child_property(self, property_name:str) -> GObject.ParamSpec or None """
+        pass
+
     def find_property(self, property_name): # real signature unknown; restored from __doc__
         """ find_property(self, property_name:str) -> GObject.ParamSpec """
         pass
@@ -645,8 +723,16 @@ class Arrows(__gi_repository_Gtk.DrawingArea):
         """ find_style_property(self, property_name:str) -> GObject.ParamSpec """
         pass
 
+    def forall(self, callback, callback_data=None): # real signature unknown; restored from __doc__
+        """ forall(self, callback:Gtk.Callback, callback_data=None) """
+        pass
+
     def force_floating(self, *args, **kargs): # reliably restored by inspect
         # no doc
+        pass
+
+    def foreach(self, callback, callback_data=None): # real signature unknown; restored from __doc__
+        """ foreach(self, callback:Gtk.Callback, callback_data=None) """
         pass
 
     def freeze_child_notify(self): # reliably restored by inspect
@@ -683,6 +769,10 @@ class Arrows(__gi_repository_Gtk.DrawingArea):
         """ get_action_group(self, prefix:str) -> Gio.ActionGroup or None """
         pass
 
+    def get_adjacent_child(self, direction): # real signature unknown; restored from __doc__
+        """ get_adjacent_child(self, direction:Handy.NavigationDirection) -> Gtk.Widget or None """
+        pass
+
     def get_allocated_baseline(self): # real signature unknown; restored from __doc__
         """ get_allocated_baseline(self) -> int """
         return 0
@@ -711,6 +801,14 @@ class Arrows(__gi_repository_Gtk.DrawingArea):
         """ get_app_paintable(self) -> bool """
         return False
 
+    def get_border_width(self): # real signature unknown; restored from __doc__
+        """ get_border_width(self) -> int """
+        return 0
+
+    def get_cancel_progress(self): # real signature unknown; restored from __doc__
+        """ get_cancel_progress(self) -> float """
+        return 0.0
+
     def get_can_default(self): # real signature unknown; restored from __doc__
         """ get_can_default(self) -> bool """
         return False
@@ -718,6 +816,18 @@ class Arrows(__gi_repository_Gtk.DrawingArea):
     def get_can_focus(self): # real signature unknown; restored from __doc__
         """ get_can_focus(self) -> bool """
         return False
+
+    def get_can_swipe_back(self): # real signature unknown; restored from __doc__
+        """ get_can_swipe_back(self) -> bool """
+        return False
+
+    def get_can_swipe_forward(self): # real signature unknown; restored from __doc__
+        """ get_can_swipe_forward(self) -> bool """
+        return False
+
+    def get_children(self): # real signature unknown; restored from __doc__
+        """ get_children(self) -> list """
+        return []
 
     def get_child_requisition(self): # real signature unknown; restored from __doc__
         """ get_child_requisition(self) -> requisition:Gtk.Requisition """
@@ -738,10 +848,6 @@ class Arrows(__gi_repository_Gtk.DrawingArea):
     def get_composite_name(self): # real signature unknown; restored from __doc__
         """ get_composite_name(self) -> str """
         return ""
-
-    def get_count(self): # real signature unknown; restored from __doc__
-        """ get_count(self) -> int """
-        return 0
 
     def get_css_name(self): # real signature unknown; restored from __doc__
         """ get_css_name(self) -> str """
@@ -768,28 +874,44 @@ class Arrows(__gi_repository_Gtk.DrawingArea):
         pass
 
     def get_direction(self): # real signature unknown; restored from __doc__
-        """ get_direction(self) -> Handy.ArrowsDirection """
+        """ get_direction(self) -> Gtk.TextDirection """
         pass
 
     def get_display(self): # real signature unknown; restored from __doc__
         """ get_display(self) -> Gdk.Display """
         pass
 
+    def get_distance(self): # real signature unknown; restored from __doc__
+        """ get_distance(self) -> float """
+        return 0.0
+
     def get_double_buffered(self): # real signature unknown; restored from __doc__
         """ get_double_buffered(self) -> bool """
         return False
-
-    def get_duration(self): # real signature unknown; restored from __doc__
-        """ get_duration(self) -> int """
-        return 0
 
     def get_events(self): # real signature unknown; restored from __doc__
         """ get_events(self) -> int """
         return 0
 
+    def get_focus_chain(*args, **kwargs): # reliably restored by inspect
+        # no doc
+        pass
+
+    def get_focus_child(self): # real signature unknown; restored from __doc__
+        """ get_focus_child(self) -> Gtk.Widget or None """
+        pass
+
+    def get_focus_hadjustment(self): # real signature unknown; restored from __doc__
+        """ get_focus_hadjustment(self) -> Gtk.Adjustment or None """
+        pass
+
     def get_focus_on_click(self): # real signature unknown; restored from __doc__
         """ get_focus_on_click(self) -> bool """
         return False
+
+    def get_focus_vadjustment(self): # real signature unknown; restored from __doc__
+        """ get_focus_vadjustment(self) -> Gtk.Adjustment or None """
+        pass
 
     def get_font_map(self): # real signature unknown; restored from __doc__
         """ get_font_map(self) -> Pango.FontMap or None """
@@ -823,9 +945,17 @@ class Arrows(__gi_repository_Gtk.DrawingArea):
         """ get_hexpand_set(self) -> bool """
         return False
 
+    def get_homogeneous(self, orientation): # real signature unknown; restored from __doc__
+        """ get_homogeneous(self, orientation:Gtk.Orientation) -> bool """
+        return False
+
     def get_internal_child(self, builder, childname): # real signature unknown; restored from __doc__
         """ get_internal_child(self, builder:Gtk.Builder, childname:str) -> GObject.Object """
         pass
+
+    def get_interpolate_size(self): # real signature unknown; restored from __doc__
+        """ get_interpolate_size(self) -> bool """
+        return False
 
     def get_mapped(self): # real signature unknown; restored from __doc__
         """ get_mapped(self) -> bool """
@@ -875,6 +1005,10 @@ class Arrows(__gi_repository_Gtk.DrawingArea):
         """ get_opacity(self) -> float """
         return 0.0
 
+    def get_orientation(self): # real signature unknown; restored from __doc__
+        """ get_orientation(self) -> Gtk.Orientation """
+        pass
+
     def get_pango_context(self): # real signature unknown; restored from __doc__
         """ get_pango_context(self) -> Pango.Context """
         pass
@@ -889,6 +1023,10 @@ class Arrows(__gi_repository_Gtk.DrawingArea):
 
     def get_path(self): # real signature unknown; restored from __doc__
         """ get_path(self) -> Gtk.WidgetPath """
+        pass
+
+    def get_path_for_child(self, child): # real signature unknown; restored from __doc__
+        """ get_path_for_child(self, child:Gtk.Widget) -> Gtk.WidgetPath """
         pass
 
     def get_pointer(self): # real signature unknown; restored from __doc__
@@ -919,6 +1057,10 @@ class Arrows(__gi_repository_Gtk.DrawingArea):
         """ get_preferred_width_for_height(self, height:int) -> minimum_width:int, natural_width:int """
         pass
 
+    def get_progress(self): # real signature unknown; restored from __doc__
+        """ get_progress(self) -> float """
+        return 0.0
+
     def get_properties(self, *args, **kwargs): # real signature unknown
         pass
 
@@ -945,6 +1087,10 @@ class Arrows(__gi_repository_Gtk.DrawingArea):
         """ get_requisition(self) -> requisition:Gtk.Requisition """
         pass
 
+    def get_resize_mode(self): # real signature unknown; restored from __doc__
+        """ get_resize_mode(self) -> Gtk.ResizeMode """
+        pass
+
     def get_root_window(self): # real signature unknown; restored from __doc__
         """ get_root_window(self) -> Gdk.Window """
         pass
@@ -969,6 +1115,10 @@ class Arrows(__gi_repository_Gtk.DrawingArea):
         """ get_size_request(self) -> width:int, height:int """
         pass
 
+    def get_snap_points(self): # real signature unknown; restored from __doc__
+        """ get_snap_points(self) -> list, n_snap_points:int """
+        return []
+
     def get_state(self): # real signature unknown; restored from __doc__
         """ get_state(self) -> Gtk.StateType """
         pass
@@ -988,6 +1138,14 @@ class Arrows(__gi_repository_Gtk.DrawingArea):
     def get_support_multidevice(self): # real signature unknown; restored from __doc__
         """ get_support_multidevice(self) -> bool """
         return False
+
+    def get_swipe_area(self): # real signature unknown; restored from __doc__
+        """ get_swipe_area(self) -> rect:Gdk.Rectangle """
+        pass
+
+    def get_swipe_tracker(self): # real signature unknown; restored from __doc__
+        """ get_swipe_tracker(self) -> Handy.SwipeTracker """
+        pass
 
     def get_template_child(self, widget_type, name): # real signature unknown; restored from __doc__
         """ get_template_child(self, widget_type:GType, name:str) -> GObject.Object """
@@ -1009,6 +1167,18 @@ class Arrows(__gi_repository_Gtk.DrawingArea):
         """ get_toplevel(self) -> Gtk.Widget """
         pass
 
+    def get_transition_duration(self): # real signature unknown; restored from __doc__
+        """ get_transition_duration(self) -> int """
+        return 0
+
+    def get_transition_running(self): # real signature unknown; restored from __doc__
+        """ get_transition_running(self) -> bool """
+        return False
+
+    def get_transition_type(self): # real signature unknown; restored from __doc__
+        """ get_transition_type(self) -> Handy.DeckTransitionType """
+        pass
+
     def get_valign(self): # real signature unknown; restored from __doc__
         """ get_valign(self) -> Gtk.Align """
         pass
@@ -1028,6 +1198,14 @@ class Arrows(__gi_repository_Gtk.DrawingArea):
     def get_visible(self): # real signature unknown; restored from __doc__
         """ get_visible(self) -> bool """
         return False
+
+    def get_visible_child(self): # real signature unknown; restored from __doc__
+        """ get_visible_child(self) -> Gtk.Widget """
+        pass
+
+    def get_visible_child_name(self): # real signature unknown; restored from __doc__
+        """ get_visible_child_name(self) -> str """
+        return ""
 
     def get_visual(self): # real signature unknown; restored from __doc__
         """ get_visual(self) -> Gdk.Visual """
@@ -1077,18 +1255,22 @@ class Arrows(__gi_repository_Gtk.DrawingArea):
         pass
 
     def handler_disconnect(*args, **kwargs): # reliably restored by inspect
-        """ signal_handler_disconnect(instance:GObject.Object, handler_id:int) """
+        # no doc
         pass
 
     def handler_is_connected(*args, **kwargs): # reliably restored by inspect
-        """ signal_handler_is_connected(instance:GObject.Object, handler_id:int) -> bool """
+        # no doc
         pass
 
     def handler_unblock(*args, **kwargs): # reliably restored by inspect
-        """ signal_handler_unblock(instance:GObject.Object, handler_id:int) """
+        # no doc
         pass
 
     def handler_unblock_by_func(self, *args, **kwargs): # real signature unknown
+        pass
+
+    def handle_border_width(self): # real signature unknown; restored from __doc__
+        """ handle_border_width(self) """
         pass
 
     def has_default(self): # real signature unknown; restored from __doc__
@@ -1133,6 +1315,14 @@ class Arrows(__gi_repository_Gtk.DrawingArea):
 
     def insert_action_group(self, name, group=None): # real signature unknown; restored from __doc__
         """ insert_action_group(self, name:str, group:Gio.ActionGroup=None) """
+        pass
+
+    def install_child_properties(self, pspecs): # real signature unknown; restored from __doc__
+        """ install_child_properties(self, pspecs:list) """
+        pass
+
+    def install_child_property(self, property_id, pspec): # real signature unknown; restored from __doc__
+        """ install_child_property(self, property_id:int, pspec:GObject.ParamSpec) """
         pass
 
     def install_properties(self, pspecs): # real signature unknown; restored from __doc__
@@ -1211,6 +1401,10 @@ class Arrows(__gi_repository_Gtk.DrawingArea):
         """ list_action_prefixes(self) -> list """
         return []
 
+    def list_child_properties(self): # real signature unknown; restored from __doc__
+        """ list_child_properties(self) -> list, n_properties:int """
+        return []
+
     def list_mnemonic_labels(self): # real signature unknown; restored from __doc__
         """ list_mnemonic_labels(self) -> list """
         return []
@@ -1258,6 +1452,10 @@ class Arrows(__gi_repository_Gtk.DrawingArea):
     def modify_text(self, state, color=None): # real signature unknown; restored from __doc__
         """ modify_text(self, state:Gtk.StateType, color:Gdk.Color=None) """
         pass
+
+    def navigate(self, direction): # real signature unknown; restored from __doc__
+        """ navigate(self, direction:Handy.NavigationDirection) -> bool """
+        return False
 
     def new(self): # real signature unknown; restored from __doc__
         """ new() -> Gtk.Widget """
@@ -1309,6 +1507,10 @@ class Arrows(__gi_repository_Gtk.DrawingArea):
 
     def pop_composite_child(self): # real signature unknown; restored from __doc__
         """ pop_composite_child() """
+        pass
+
+    def propagate_draw(self, child, cr): # real signature unknown; restored from __doc__
+        """ propagate_draw(self, child:Gtk.Widget, cr:cairo.Context) """
         pass
 
     def push_composite_child(self): # real signature unknown; restored from __doc__
@@ -1363,6 +1565,10 @@ class Arrows(__gi_repository_Gtk.DrawingArea):
         """ register_window(self, window:Gdk.Window) """
         pass
 
+    def remove(self, widget): # real signature unknown; restored from __doc__
+        """ remove(self, widget:Gtk.Widget) """
+        pass
+
     def remove_accelerator(self, accel_group, accel_key, accel_mods): # real signature unknown; restored from __doc__
         """ remove_accelerator(self, accel_group:Gtk.AccelGroup, accel_key:int, accel_mods:Gdk.ModifierType) -> bool """
         return False
@@ -1403,6 +1609,10 @@ class Arrows(__gi_repository_Gtk.DrawingArea):
         """ reset_style(self) """
         pass
 
+    def resize_children(self): # real signature unknown; restored from __doc__
+        """ resize_children(self) """
+        pass
+
     def run_dispose(self, *args, **kargs): # reliably restored by inspect
         # no doc
         pass
@@ -1435,6 +1645,10 @@ class Arrows(__gi_repository_Gtk.DrawingArea):
         """ set_app_paintable(self, app_paintable:bool) """
         pass
 
+    def set_border_width(self, border_width): # real signature unknown; restored from __doc__
+        """ set_border_width(self, border_width:int) """
+        pass
+
     def set_buildable_property(self, builder, name, value): # real signature unknown; restored from __doc__
         """ set_buildable_property(self, builder:Gtk.Builder, name:str, value:GObject.Value) """
         pass
@@ -1445,6 +1659,14 @@ class Arrows(__gi_repository_Gtk.DrawingArea):
 
     def set_can_focus(self, can_focus): # real signature unknown; restored from __doc__
         """ set_can_focus(self, can_focus:bool) """
+        pass
+
+    def set_can_swipe_back(self, can_swipe_back): # real signature unknown; restored from __doc__
+        """ set_can_swipe_back(self, can_swipe_back:bool) """
+        pass
+
+    def set_can_swipe_forward(self, can_swipe_forward): # real signature unknown; restored from __doc__
+        """ set_can_swipe_forward(self, can_swipe_forward:bool) """
         pass
 
     def set_child_visible(self, is_visible): # real signature unknown; restored from __doc__
@@ -1461,10 +1683,6 @@ class Arrows(__gi_repository_Gtk.DrawingArea):
 
     def set_connect_func(self, connect_func, connect_data=None): # real signature unknown; restored from __doc__
         """ set_connect_func(self, connect_func:Gtk.BuilderConnectFunc, connect_data=None) """
-        pass
-
-    def set_count(self, count): # real signature unknown; restored from __doc__
-        """ set_count(self, count:int) """
         pass
 
     def set_css_name(self, name): # real signature unknown; restored from __doc__
@@ -1487,24 +1705,36 @@ class Arrows(__gi_repository_Gtk.DrawingArea):
         """ set_device_events(self, device:Gdk.Device, events:Gdk.EventMask) """
         pass
 
-    def set_direction(self, direction): # real signature unknown; restored from __doc__
-        """ set_direction(self, direction:Handy.ArrowsDirection) """
+    def set_direction(self, dir): # real signature unknown; restored from __doc__
+        """ set_direction(self, dir:Gtk.TextDirection) """
         pass
 
     def set_double_buffered(self, double_buffered): # real signature unknown; restored from __doc__
         """ set_double_buffered(self, double_buffered:bool) """
         pass
 
-    def set_duration(self, duration): # real signature unknown; restored from __doc__
-        """ set_duration(self, duration:int) """
-        pass
-
     def set_events(self, events): # real signature unknown; restored from __doc__
         """ set_events(self, events:int) """
         pass
 
+    def set_focus_chain(self, focusable_widgets): # real signature unknown; restored from __doc__
+        """ set_focus_chain(self, focusable_widgets:list) """
+        pass
+
+    def set_focus_child(self, child=None): # real signature unknown; restored from __doc__
+        """ set_focus_child(self, child:Gtk.Widget=None) """
+        pass
+
+    def set_focus_hadjustment(self, adjustment): # real signature unknown; restored from __doc__
+        """ set_focus_hadjustment(self, adjustment:Gtk.Adjustment) """
+        pass
+
     def set_focus_on_click(self, focus_on_click): # real signature unknown; restored from __doc__
         """ set_focus_on_click(self, focus_on_click:bool) """
+        pass
+
+    def set_focus_vadjustment(self, adjustment): # real signature unknown; restored from __doc__
+        """ set_focus_vadjustment(self, adjustment:Gtk.Adjustment) """
         pass
 
     def set_font_map(self, font_map=None): # real signature unknown; restored from __doc__
@@ -1533,6 +1763,14 @@ class Arrows(__gi_repository_Gtk.DrawingArea):
 
     def set_hexpand_set(self, set): # real signature unknown; restored from __doc__
         """ set_hexpand_set(self, set:bool) """
+        pass
+
+    def set_homogeneous(self, orientation, homogeneous): # real signature unknown; restored from __doc__
+        """ set_homogeneous(self, orientation:Gtk.Orientation, homogeneous:bool) """
+        pass
+
+    def set_interpolate_size(self, interpolate_size): # real signature unknown; restored from __doc__
+        """ set_interpolate_size(self, interpolate_size:bool) """
         pass
 
     def set_mapped(self, mapped): # real signature unknown; restored from __doc__
@@ -1575,6 +1813,10 @@ class Arrows(__gi_repository_Gtk.DrawingArea):
         """ set_opacity(self, opacity:float) """
         pass
 
+    def set_orientation(self, orientation): # real signature unknown; restored from __doc__
+        """ set_orientation(self, orientation:Gtk.Orientation) """
+        pass
+
     def set_parent(self, parent): # real signature unknown; restored from __doc__
         """ set_parent(self, parent:Gtk.Widget) """
         pass
@@ -1593,12 +1835,20 @@ class Arrows(__gi_repository_Gtk.DrawingArea):
         """ set_realized(self, realized:bool) """
         pass
 
+    def set_reallocate_redraws(self, needs_redraws): # real signature unknown; restored from __doc__
+        """ set_reallocate_redraws(self, needs_redraws:bool) """
+        pass
+
     def set_receives_default(self, receives_default): # real signature unknown; restored from __doc__
         """ set_receives_default(self, receives_default:bool) """
         pass
 
     def set_redraw_on_allocate(self, redraw_on_allocate): # real signature unknown; restored from __doc__
         """ set_redraw_on_allocate(self, redraw_on_allocate:bool) """
+        pass
+
+    def set_resize_mode(self, resize_mode): # real signature unknown; restored from __doc__
+        """ set_resize_mode(self, resize_mode:Gtk.ResizeMode) """
         pass
 
     def set_sensitive(self, sensitive): # real signature unknown; restored from __doc__
@@ -1645,6 +1895,14 @@ class Arrows(__gi_repository_Gtk.DrawingArea):
         """ set_tooltip_window(self, custom_window:Gtk.Window=None) """
         pass
 
+    def set_transition_duration(self, duration): # real signature unknown; restored from __doc__
+        """ set_transition_duration(self, duration:int) """
+        pass
+
+    def set_transition_type(self, transition): # real signature unknown; restored from __doc__
+        """ set_transition_type(self, transition:Handy.DeckTransitionType) """
+        pass
+
     def set_valign(self, align): # real signature unknown; restored from __doc__
         """ set_valign(self, align:Gtk.Align) """
         pass
@@ -1659,6 +1917,14 @@ class Arrows(__gi_repository_Gtk.DrawingArea):
 
     def set_visible(self, visible): # real signature unknown; restored from __doc__
         """ set_visible(self, visible:bool) """
+        pass
+
+    def set_visible_child(self, visible_child): # real signature unknown; restored from __doc__
+        """ set_visible_child(self, visible_child:Gtk.Widget) """
+        pass
+
+    def set_visible_child_name(self, name): # real signature unknown; restored from __doc__
+        """ set_visible_child_name(self, name:str) """
         pass
 
     def set_visual(self, visual=None): # real signature unknown; restored from __doc__
@@ -1710,7 +1976,7 @@ class Arrows(__gi_repository_Gtk.DrawingArea):
         pass
 
     def stop_emission_by_name(*args, **kwargs): # reliably restored by inspect
-        """ signal_stop_emission_by_name(instance:GObject.Object, detailed_signal:str) """
+        # no doc
         pass
 
     def style_attach(self): # real signature unknown; restored from __doc__
@@ -1719,6 +1985,10 @@ class Arrows(__gi_repository_Gtk.DrawingArea):
 
     def style_get_property(self, property_name, value=None): # reliably restored by inspect
         # no doc
+        pass
+
+    def switch_child(self, index, duration): # real signature unknown; restored from __doc__
+        """ switch_child(self, index:int, duration:int) """
         pass
 
     def thaw_child_notify(self): # real signature unknown; restored from __doc__
@@ -1730,7 +2000,7 @@ class Arrows(__gi_repository_Gtk.DrawingArea):
         pass
 
     def translate_coordinates(*args, **kwargs): # reliably restored by inspect
-        """ translate_coordinates(self, dest_widget:Gtk.Widget, src_x:int, src_y:int) -> bool, dest_x:int, dest_y:int """
+        # no doc
         pass
 
     def trigger_tooltip_query(self): # real signature unknown; restored from __doc__
@@ -1755,6 +2025,10 @@ class Arrows(__gi_repository_Gtk.DrawingArea):
 
     def unregister_window(self, window): # real signature unknown; restored from __doc__
         """ unregister_window(self, window:Gdk.Window) """
+        pass
+
+    def unset_focus_chain(self): # real signature unknown; restored from __doc__
+        """ unset_focus_chain(self) """
         pass
 
     def unset_state_flags(self, flags): # real signature unknown; restored from __doc__
@@ -1792,6 +2066,14 @@ class Arrows(__gi_repository_Gtk.DrawingArea):
         # no doc
         pass
 
+    def __bool__(self): # reliably restored by inspect
+        # no doc
+        pass
+
+    def __contains__(self, child): # reliably restored by inspect
+        # no doc
+        pass
+
     def __copy__(self, *args, **kwargs): # real signature unknown
         pass
 
@@ -1802,16 +2084,19 @@ class Arrows(__gi_repository_Gtk.DrawingArea):
         """ Implement delattr(self, name). """
         pass
 
-    def __dir__(self, *args, **kwargs): # real signature unknown
-        """ Default dir() implementation. """
-        pass
+    def __dir__(self): # real signature unknown; restored from __doc__
+        """
+        __dir__() -> list
+        default dir() implementation
+        """
+        return []
 
     def __eq__(self, *args, **kwargs): # real signature unknown
         """ Return self==value. """
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
-        """ Default object formatter. """
+        """ default object formatter """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -1842,6 +2127,14 @@ class Arrows(__gi_repository_Gtk.DrawingArea):
     def __init__(self, **properties): # real signature unknown; restored from __doc__
         pass
 
+    def __iter__(self): # reliably restored by inspect
+        # no doc
+        pass
+
+    def __len__(self): # reliably restored by inspect
+        # no doc
+        pass
+
     def __le__(self, *args, **kwargs): # real signature unknown
         """ Return self<=value. """
         pass
@@ -1859,12 +2152,16 @@ class Arrows(__gi_repository_Gtk.DrawingArea):
         """ Return self!=value. """
         pass
 
+    def __nonzero__(self): # reliably restored by inspect
+        # no doc
+        pass
+
     def __reduce_ex__(self, *args, **kwargs): # real signature unknown
-        """ Helper for pickle. """
+        """ helper for pickle """
         pass
 
     def __reduce__(self, *args, **kwargs): # real signature unknown
-        """ Helper for pickle. """
+        """ helper for pickle """
         pass
 
     def __repr__(self, *args, **kwargs): # real signature unknown
@@ -1875,9 +2172,12 @@ class Arrows(__gi_repository_Gtk.DrawingArea):
         """ Implement setattr(self, name, value). """
         pass
 
-    def __sizeof__(self, *args, **kwargs): # real signature unknown
-        """ Size of object in memory, in bytes. """
-        pass
+    def __sizeof__(self): # real signature unknown; restored from __doc__
+        """
+        __sizeof__() -> int
+        size of object in memory, in bytes
+        """
+        return 0
 
     def __str__(self, *args, **kwargs): # real signature unknown
         """ Return str(self). """
@@ -1897,8 +2197,6 @@ class Arrows(__gi_repository_Gtk.DrawingArea):
     def __weakref__(self, *args, **kwargs): # real signature unknown
         pass
 
-    dummy = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-
     g_type_instance = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
     parent_instance = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
@@ -1916,12 +2214,12 @@ class Arrows(__gi_repository_Gtk.DrawingArea):
     __grefcount__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
-    props = None # (!) real value is '<gi._gi.GProps object at 0x7f4ea0d764c0>'
+    props = None # (!) real value is '<gi._gi.GProps object at 0x7f2c96846be0>'
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Arrows), '__module__': 'gi.repository.Handy', '__gtype__': <GType HdyArrows (93893295176528)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new), 'animate': gi.FunctionInfo(animate), 'get_count': gi.FunctionInfo(get_count), 'get_direction': gi.FunctionInfo(get_direction), 'get_duration': gi.FunctionInfo(get_duration), 'set_count': gi.FunctionInfo(set_count), 'set_direction': gi.FunctionInfo(set_direction), 'set_duration': gi.FunctionInfo(set_duration), 'parent_instance': <property object at 0x7f4ea0e0db80>})"
-    __gdoc__ = "Object HdyArrows\n\nProperties from HdyArrows:\n  count -> guint: Number of arrows\n    Number of arrows to display\n  direction -> HdyArrowsDirection: Arrows Direction\n    Direction the arrows should point to\n  duration -> guint: Arrow animation duration\n    The duration of the arrow animation in milliseconds\n\nSignals from GtkWidget:\n  composited-changed ()\n  destroy ()\n  show ()\n  hide ()\n  map ()\n  unmap ()\n  realize ()\n  unrealize ()\n  size-allocate (GdkRectangle)\n  state-changed (GtkStateType)\n  state-flags-changed (GtkStateFlags)\n  parent-set (GtkWidget)\n  hierarchy-changed (GtkWidget)\n  style-set (GtkStyle)\n  style-updated ()\n  direction-changed (GtkTextDirection)\n  grab-notify (gboolean)\n  child-notify (GParam)\n  draw (CairoContext) -> gboolean\n  mnemonic-activate (gboolean) -> gboolean\n  grab-focus ()\n  focus (GtkDirectionType) -> gboolean\n  move-focus (GtkDirectionType)\n  keynav-failed (GtkDirectionType) -> gboolean\n  event (GdkEvent) -> gboolean\n  event-after (GdkEvent)\n  button-press-event (GdkEvent) -> gboolean\n  button-release-event (GdkEvent) -> gboolean\n  touch-event (GdkEvent) -> gboolean\n  scroll-event (GdkEvent) -> gboolean\n  motion-notify-event (GdkEvent) -> gboolean\n  delete-event (GdkEvent) -> gboolean\n  destroy-event (GdkEvent) -> gboolean\n  key-press-event (GdkEvent) -> gboolean\n  key-release-event (GdkEvent) -> gboolean\n  enter-notify-event (GdkEvent) -> gboolean\n  leave-notify-event (GdkEvent) -> gboolean\n  configure-event (GdkEvent) -> gboolean\n  focus-in-event (GdkEvent) -> gboolean\n  focus-out-event (GdkEvent) -> gboolean\n  map-event (GdkEvent) -> gboolean\n  unmap-event (GdkEvent) -> gboolean\n  property-notify-event (GdkEvent) -> gboolean\n  selection-clear-event (GdkEvent) -> gboolean\n  selection-request-event (GdkEvent) -> gboolean\n  selection-notify-event (GdkEvent) -> gboolean\n  selection-received (GtkSelectionData, guint)\n  selection-get (GtkSelectionData, guint, guint)\n  proximity-in-event (GdkEvent) -> gboolean\n  proximity-out-event (GdkEvent) -> gboolean\n  drag-leave (GdkDragContext, guint)\n  drag-begin (GdkDragContext)\n  drag-end (GdkDragContext)\n  drag-data-delete (GdkDragContext)\n  drag-failed (GdkDragContext, GtkDragResult) -> gboolean\n  drag-motion (GdkDragContext, gint, gint, guint) -> gboolean\n  drag-drop (GdkDragContext, gint, gint, guint) -> gboolean\n  drag-data-get (GdkDragContext, GtkSelectionData, guint, guint)\n  drag-data-received (GdkDragContext, gint, gint, GtkSelectionData, guint, guint)\n  visibility-notify-event (GdkEvent) -> gboolean\n  window-state-event (GdkEvent) -> gboolean\n  damage-event (GdkEvent) -> gboolean\n  grab-broken-event (GdkEvent) -> gboolean\n  query-tooltip (gint, gint, gboolean, GtkTooltip) -> gboolean\n  popup-menu () -> gboolean\n  show-help (GtkWidgetHelpType) -> gboolean\n  accel-closures-changed ()\n  screen-changed (GdkScreen)\n  can-activate-accel (guint) -> gboolean\n\nProperties from GtkWidget:\n  name -> gchararray: Widget name\n    The name of the widget\n  parent -> GtkContainer: Parent widget\n    The parent widget of this widget. Must be a Container widget\n  width-request -> gint: Width request\n    Override for width request of the widget, or -1 if natural request should be used\n  height-request -> gint: Height request\n    Override for height request of the widget, or -1 if natural request should be used\n  visible -> gboolean: Visible\n    Whether the widget is visible\n  sensitive -> gboolean: Sensitive\n    Whether the widget responds to input\n  app-paintable -> gboolean: Application paintable\n    Whether the application will paint directly on the widget\n  can-focus -> gboolean: Can focus\n    Whether the widget can accept the input focus\n  has-focus -> gboolean: Has focus\n    Whether the widget has the input focus\n  is-focus -> gboolean: Is focus\n    Whether the widget is the focus widget within the toplevel\n  focus-on-click -> gboolean: Focus on click\n    Whether the widget should grab focus when it is clicked with the mouse\n  can-default -> gboolean: Can default\n    Whether the widget can be the default widget\n  has-default -> gboolean: Has default\n    Whether the widget is the default widget\n  receives-default -> gboolean: Receives default\n    If TRUE, the widget will receive the default action when it is focused\n  composite-child -> gboolean: Composite child\n    Whether the widget is part of a composite widget\n  style -> GtkStyle: Style\n    The style of the widget, which contains information about how it will look (colors etc)\n  events -> GdkEventMask: Events\n    The event mask that decides what kind of GdkEvents this widget gets\n  no-show-all -> gboolean: No show all\n    Whether gtk_widget_show_all() should not affect this widget\n  has-tooltip -> gboolean: Has tooltip\n    Whether this widget has a tooltip\n  tooltip-markup -> gchararray: Tooltip markup\n    The contents of the tooltip for this widget\n  tooltip-text -> gchararray: Tooltip Text\n    The contents of the tooltip for this widget\n  window -> GdkWindow: Window\n    The widget's window if it is realized\n  opacity -> gdouble: Opacity for Widget\n    The opacity of the widget, from 0 to 1\n  double-buffered -> gboolean: Double Buffered\n    Whether the widget is double buffered\n  halign -> GtkAlign: Horizontal Alignment\n    How to position in extra horizontal space\n  valign -> GtkAlign: Vertical Alignment\n    How to position in extra vertical space\n  margin-left -> gint: Margin on Left\n    Pixels of extra space on the left side\n  margin-right -> gint: Margin on Right\n    Pixels of extra space on the right side\n  margin-start -> gint: Margin on Start\n    Pixels of extra space on the start\n  margin-end -> gint: Margin on End\n    Pixels of extra space on the end\n  margin-top -> gint: Margin on Top\n    Pixels of extra space on the top side\n  margin-bottom -> gint: Margin on Bottom\n    Pixels of extra space on the bottom side\n  margin -> gint: All Margins\n    Pixels of extra space on all four sides\n  hexpand -> gboolean: Horizontal Expand\n    Whether widget wants more horizontal space\n  vexpand -> gboolean: Vertical Expand\n    Whether widget wants more vertical space\n  hexpand-set -> gboolean: Horizontal Expand Set\n    Whether to use the hexpand property\n  vexpand-set -> gboolean: Vertical Expand Set\n    Whether to use the vexpand property\n  expand -> gboolean: Expand Both\n    Whether widget wants to expand in both directions\n  scale-factor -> gint: Scale factor\n    The scaling factor of the window\n\nSignals from GObject:\n  notify (GParam)\n\n"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Deck), '__module__': 'gi.repository.Handy', '__gtype__': <GType HdyDeck (30540224)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new), 'get_adjacent_child': gi.FunctionInfo(get_adjacent_child), 'get_can_swipe_back': gi.FunctionInfo(get_can_swipe_back), 'get_can_swipe_forward': gi.FunctionInfo(get_can_swipe_forward), 'get_homogeneous': gi.FunctionInfo(get_homogeneous), 'get_interpolate_size': gi.FunctionInfo(get_interpolate_size), 'get_transition_duration': gi.FunctionInfo(get_transition_duration), 'get_transition_running': gi.FunctionInfo(get_transition_running), 'get_transition_type': gi.FunctionInfo(get_transition_type), 'get_visible_child': gi.FunctionInfo(get_visible_child), 'get_visible_child_name': gi.FunctionInfo(get_visible_child_name), 'navigate': gi.FunctionInfo(navigate), 'set_can_swipe_back': gi.FunctionInfo(set_can_swipe_back), 'set_can_swipe_forward': gi.FunctionInfo(set_can_swipe_forward), 'set_homogeneous': gi.FunctionInfo(set_homogeneous), 'set_interpolate_size': gi.FunctionInfo(set_interpolate_size), 'set_transition_duration': gi.FunctionInfo(set_transition_duration), 'set_transition_type': gi.FunctionInfo(set_transition_type), 'set_visible_child': gi.FunctionInfo(set_visible_child), 'set_visible_child_name': gi.FunctionInfo(set_visible_child_name), 'parent_instance': <property object at 0x7f2c96a4b318>})"
+    __gdoc__ = "Object HdyDeck\n\nProperties from HdyDeck:\n  hhomogeneous -> gboolean: Horizontally homogeneous\n    Horizontally homogeneous sizing\n  vhomogeneous -> gboolean: Vertically homogeneous\n    Vertically homogeneous sizing\n  visible-child -> GtkWidget: Visible child\n    The widget currently visible\n  visible-child-name -> gchararray: Name of visible child\n    The name of the widget currently visible\n  transition-type -> HdyDeckTransitionType: Transition type\n    The type of animation used to transition between children\n  transition-duration -> guint: Transition duration\n    The transition animation duration, in milliseconds\n  transition-running -> gboolean: Transition running\n    Whether or not the transition is currently running\n  interpolate-size -> gboolean: Interpolate size\n    Whether or not the size should smoothly change when changing between differently sized children\n  can-swipe-back -> gboolean: Can swipe back\n    Whether or not swipe gesture can be used to switch to the previous child\n  can-swipe-forward -> gboolean: Can swipe forward\n    Whether or not swipe gesture can be used to switch to the next child\n\nSignals from HdySwipeable:\n  child-switched (guint, gint64)\n\nSignals from GtkContainer:\n  add (GtkWidget)\n  remove (GtkWidget)\n  check-resize ()\n  set-focus-child (GtkWidget)\n\nProperties from GtkContainer:\n  border-width -> guint: Border width\n    The width of the empty border outside the containers children\n  resize-mode -> GtkResizeMode: Resize mode\n    Specify how resize events are handled\n  child -> GtkWidget: Child\n    Can be used to add a new child to the container\n\nSignals from GtkWidget:\n  composited-changed ()\n  destroy ()\n  show ()\n  hide ()\n  map ()\n  unmap ()\n  realize ()\n  unrealize ()\n  size-allocate (GdkRectangle)\n  state-changed (GtkStateType)\n  state-flags-changed (GtkStateFlags)\n  parent-set (GtkWidget)\n  hierarchy-changed (GtkWidget)\n  style-set (GtkStyle)\n  style-updated ()\n  direction-changed (GtkTextDirection)\n  grab-notify (gboolean)\n  child-notify (GParam)\n  draw (CairoContext) -> gboolean\n  mnemonic-activate (gboolean) -> gboolean\n  grab-focus ()\n  focus (GtkDirectionType) -> gboolean\n  move-focus (GtkDirectionType)\n  keynav-failed (GtkDirectionType) -> gboolean\n  event (GdkEvent) -> gboolean\n  event-after (GdkEvent)\n  button-press-event (GdkEvent) -> gboolean\n  button-release-event (GdkEvent) -> gboolean\n  touch-event (GdkEvent) -> gboolean\n  scroll-event (GdkEvent) -> gboolean\n  motion-notify-event (GdkEvent) -> gboolean\n  delete-event (GdkEvent) -> gboolean\n  destroy-event (GdkEvent) -> gboolean\n  key-press-event (GdkEvent) -> gboolean\n  key-release-event (GdkEvent) -> gboolean\n  enter-notify-event (GdkEvent) -> gboolean\n  leave-notify-event (GdkEvent) -> gboolean\n  configure-event (GdkEvent) -> gboolean\n  focus-in-event (GdkEvent) -> gboolean\n  focus-out-event (GdkEvent) -> gboolean\n  map-event (GdkEvent) -> gboolean\n  unmap-event (GdkEvent) -> gboolean\n  property-notify-event (GdkEvent) -> gboolean\n  selection-clear-event (GdkEvent) -> gboolean\n  selection-request-event (GdkEvent) -> gboolean\n  selection-notify-event (GdkEvent) -> gboolean\n  selection-received (GtkSelectionData, guint)\n  selection-get (GtkSelectionData, guint, guint)\n  proximity-in-event (GdkEvent) -> gboolean\n  proximity-out-event (GdkEvent) -> gboolean\n  drag-leave (GdkDragContext, guint)\n  drag-begin (GdkDragContext)\n  drag-end (GdkDragContext)\n  drag-data-delete (GdkDragContext)\n  drag-failed (GdkDragContext, GtkDragResult) -> gboolean\n  drag-motion (GdkDragContext, gint, gint, guint) -> gboolean\n  drag-drop (GdkDragContext, gint, gint, guint) -> gboolean\n  drag-data-get (GdkDragContext, GtkSelectionData, guint, guint)\n  drag-data-received (GdkDragContext, gint, gint, GtkSelectionData, guint, guint)\n  visibility-notify-event (GdkEvent) -> gboolean\n  window-state-event (GdkEvent) -> gboolean\n  damage-event (GdkEvent) -> gboolean\n  grab-broken-event (GdkEvent) -> gboolean\n  query-tooltip (gint, gint, gboolean, GtkTooltip) -> gboolean\n  popup-menu () -> gboolean\n  show-help (GtkWidgetHelpType) -> gboolean\n  accel-closures-changed ()\n  screen-changed (GdkScreen)\n  can-activate-accel (guint) -> gboolean\n\nProperties from GtkWidget:\n  name -> gchararray: Widget name\n    The name of the widget\n  parent -> GtkContainer: Parent widget\n    The parent widget of this widget. Must be a Container widget\n  width-request -> gint: Width request\n    Override for width request of the widget, or -1 if natural request should be used\n  height-request -> gint: Height request\n    Override for height request of the widget, or -1 if natural request should be used\n  visible -> gboolean: Visible\n    Whether the widget is visible\n  sensitive -> gboolean: Sensitive\n    Whether the widget responds to input\n  app-paintable -> gboolean: Application paintable\n    Whether the application will paint directly on the widget\n  can-focus -> gboolean: Can focus\n    Whether the widget can accept the input focus\n  has-focus -> gboolean: Has focus\n    Whether the widget has the input focus\n  is-focus -> gboolean: Is focus\n    Whether the widget is the focus widget within the toplevel\n  focus-on-click -> gboolean: Focus on click\n    Whether the widget should grab focus when it is clicked with the mouse\n  can-default -> gboolean: Can default\n    Whether the widget can be the default widget\n  has-default -> gboolean: Has default\n    Whether the widget is the default widget\n  receives-default -> gboolean: Receives default\n    If TRUE, the widget will receive the default action when it is focused\n  composite-child -> gboolean: Composite child\n    Whether the widget is part of a composite widget\n  style -> GtkStyle: Style\n    The style of the widget, which contains information about how it will look (colors etc)\n  events -> GdkEventMask: Events\n    The event mask that decides what kind of GdkEvents this widget gets\n  no-show-all -> gboolean: No show all\n    Whether gtk_widget_show_all() should not affect this widget\n  has-tooltip -> gboolean: Has tooltip\n    Whether this widget has a tooltip\n  tooltip-markup -> gchararray: Tooltip markup\n    The contents of the tooltip for this widget\n  tooltip-text -> gchararray: Tooltip Text\n    The contents of the tooltip for this widget\n  window -> GdkWindow: Window\n    The widget's window if it is realized\n  opacity -> gdouble: Opacity for Widget\n    The opacity of the widget, from 0 to 1\n  double-buffered -> gboolean: Double Buffered\n    Whether the widget is double buffered\n  halign -> GtkAlign: Horizontal Alignment\n    How to position in extra horizontal space\n  valign -> GtkAlign: Vertical Alignment\n    How to position in extra vertical space\n  margin-left -> gint: Margin on Left\n    Pixels of extra space on the left side\n  margin-right -> gint: Margin on Right\n    Pixels of extra space on the right side\n  margin-start -> gint: Margin on Start\n    Pixels of extra space on the start\n  margin-end -> gint: Margin on End\n    Pixels of extra space on the end\n  margin-top -> gint: Margin on Top\n    Pixels of extra space on the top side\n  margin-bottom -> gint: Margin on Bottom\n    Pixels of extra space on the bottom side\n  margin -> gint: All Margins\n    Pixels of extra space on all four sides\n  hexpand -> gboolean: Horizontal Expand\n    Whether widget wants more horizontal space\n  vexpand -> gboolean: Vertical Expand\n    Whether widget wants more vertical space\n  hexpand-set -> gboolean: Horizontal Expand Set\n    Whether to use the hexpand property\n  vexpand-set -> gboolean: Vertical Expand Set\n    Whether to use the vexpand property\n  expand -> gboolean: Expand Both\n    Whether widget wants to expand in both directions\n  scale-factor -> gint: Scale factor\n    The scaling factor of the window\n\nSignals from GObject:\n  notify (GParam)\n\n"
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType HdyArrows (93893295176528)>'
-    __info__ = ObjectInfo(Arrows)
+    __gtype__ = None # (!) real value is '<GType HdyDeck (30540224)>'
+    __info__ = ObjectInfo(Deck)
 
 

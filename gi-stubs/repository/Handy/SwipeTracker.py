@@ -19,23 +19,15 @@ import gi.repository.Gtk as __gi_repository_Gtk
 import gobject as __gobject
 
 
-class HeaderGroup(__gi_overrides_GObject.Object, __gi_repository_Gtk.Buildable):
+class SwipeTracker(__gi_overrides_GObject.Object, __gi_repository_Gtk.Orientable):
     """
     :Constructors:
     
     ::
     
-        HeaderGroup(**properties)
-        new() -> Handy.HeaderGroup
+        SwipeTracker(**properties)
+        new(swipeable:Handy.Swipeable) -> Handy.SwipeTracker
     """
-    def add_child(self, builder, child, type=None): # real signature unknown; restored from __doc__
-        """ add_child(self, builder:Gtk.Builder, child:GObject.Object, type:str=None) """
-        pass
-
-    def add_header_bar(self, header_bar): # real signature unknown; restored from __doc__
-        """ add_header_bar(self, header_bar:Gtk.HeaderBar) """
-        pass
-
     def bind_property(self, *args, **kwargs): # real signature unknown
         pass
 
@@ -78,22 +70,6 @@ class HeaderGroup(__gi_overrides_GObject.Object, __gi_repository_Gtk.Buildable):
 
     def connect_object_after(self, *args, **kwargs): # real signature unknown
         pass
-
-    def construct_child(self, builder, name): # real signature unknown; restored from __doc__
-        """ construct_child(self, builder:Gtk.Builder, name:str) -> GObject.Object """
-        pass
-
-    def custom_finished(self, builder, child=None, tagname, data=None): # real signature unknown; restored from __doc__
-        """ custom_finished(self, builder:Gtk.Builder, child:GObject.Object=None, tagname:str, data=None) """
-        pass
-
-    def custom_tag_end(self, builder, child=None, tagname, data=None): # real signature unknown; restored from __doc__
-        """ custom_tag_end(self, builder:Gtk.Builder, child:GObject.Object=None, tagname:str, data=None) """
-        pass
-
-    def custom_tag_start(self, builder, child=None, tagname): # real signature unknown; restored from __doc__
-        """ custom_tag_start(self, builder:Gtk.Builder, child:GObject.Object=None, tagname:str) -> bool, parser:GLib.MarkupParser, data """
-        return False
 
     def disconnect(*args, **kwargs): # reliably restored by inspect
         # no doc
@@ -139,25 +115,21 @@ class HeaderGroup(__gi_overrides_GObject.Object, __gi_repository_Gtk.Buildable):
         """ getv(self, names:list, values:list) """
         pass
 
+    def get_allow_mouse_drag(self): # real signature unknown; restored from __doc__
+        """ get_allow_mouse_drag(self) -> bool """
+        return False
+
     def get_data(self, *args, **kargs): # reliably restored by inspect
         # no doc
         pass
 
-    def get_focus(self): # real signature unknown; restored from __doc__
-        """ get_focus(self) -> Gtk.HeaderBar or None """
+    def get_enabled(self): # real signature unknown; restored from __doc__
+        """ get_enabled(self) -> bool """
+        return False
+
+    def get_orientation(self): # real signature unknown; restored from __doc__
+        """ get_orientation(self) -> Gtk.Orientation """
         pass
-
-    def get_header_bars(self): # real signature unknown; restored from __doc__
-        """ get_header_bars(self) -> list """
-        return []
-
-    def get_internal_child(self, builder, childname): # real signature unknown; restored from __doc__
-        """ get_internal_child(self, builder:Gtk.Builder, childname:str) -> GObject.Object """
-        pass
-
-    def get_name(self): # real signature unknown; restored from __doc__
-        """ get_name(self) -> str """
-        return ""
 
     def get_properties(self, *args, **kwargs): # real signature unknown
         pass
@@ -167,6 +139,14 @@ class HeaderGroup(__gi_overrides_GObject.Object, __gi_repository_Gtk.Buildable):
 
     def get_qdata(self, *args, **kargs): # reliably restored by inspect
         # no doc
+        pass
+
+    def get_reversed(self): # real signature unknown; restored from __doc__
+        """ get_reversed(self) -> bool """
+        return False
+
+    def get_swipeable(self): # real signature unknown; restored from __doc__
+        """ get_swipeable(self) -> Handy.Swipeable """
         pass
 
     def handler_block(obj, handler_id): # reliably restored by inspect
@@ -235,8 +215,8 @@ class HeaderGroup(__gi_overrides_GObject.Object, __gi_repository_Gtk.Buildable):
         """ list_properties(self) -> list, n_properties:int """
         return []
 
-    def new(self): # real signature unknown; restored from __doc__
-        """ new() -> Handy.HeaderGroup """
+    def new(self, swipeable): # real signature unknown; restored from __doc__
+        """ new(swipeable:Handy.Swipeable) -> Handy.SwipeTracker """
         pass
 
     def newv(self, object_type, parameters): # real signature unknown; restored from __doc__
@@ -255,20 +235,12 @@ class HeaderGroup(__gi_overrides_GObject.Object, __gi_repository_Gtk.Buildable):
         """ override_property(self, property_id:int, name:str) """
         pass
 
-    def parser_finished(self, builder): # real signature unknown; restored from __doc__
-        """ parser_finished(self, builder:Gtk.Builder) """
-        pass
-
     def ref(self, *args, **kargs): # reliably restored by inspect
         # no doc
         pass
 
     def ref_sink(self, *args, **kargs): # reliably restored by inspect
         # no doc
-        pass
-
-    def remove_header_bar(self, header_bar): # real signature unknown; restored from __doc__
-        """ remove_header_bar(self, header_bar:Gtk.HeaderBar) """
         pass
 
     def replace_data(self, *args, **kargs): # reliably restored by inspect
@@ -283,26 +255,34 @@ class HeaderGroup(__gi_overrides_GObject.Object, __gi_repository_Gtk.Buildable):
         # no doc
         pass
 
-    def set_buildable_property(self, builder, name, value): # real signature unknown; restored from __doc__
-        """ set_buildable_property(self, builder:Gtk.Builder, name:str, value:GObject.Value) """
+    def set_allow_mouse_drag(self, allow_mouse_drag): # real signature unknown; restored from __doc__
+        """ set_allow_mouse_drag(self, allow_mouse_drag:bool) """
         pass
 
     def set_data(self, *args, **kargs): # reliably restored by inspect
         # no doc
         pass
 
-    def set_focus(self, header_bar=None): # real signature unknown; restored from __doc__
-        """ set_focus(self, header_bar:Gtk.HeaderBar=None) """
+    def set_enabled(self, enabled): # real signature unknown; restored from __doc__
+        """ set_enabled(self, enabled:bool) """
         pass
 
-    def set_name(self, name): # real signature unknown; restored from __doc__
-        """ set_name(self, name:str) """
+    def set_orientation(self, orientation): # real signature unknown; restored from __doc__
+        """ set_orientation(self, orientation:Gtk.Orientation) """
         pass
 
     def set_properties(self, *args, **kwargs): # real signature unknown
         pass
 
     def set_property(self, *args, **kwargs): # real signature unknown
+        pass
+
+    def set_reversed(self, reversed): # real signature unknown; restored from __doc__
+        """ set_reversed(self, reversed:bool) """
+        pass
+
+    def shift_position(self, delta): # real signature unknown; restored from __doc__
+        """ shift_position(self, delta:float) """
         pass
 
     def steal_data(self, *args, **kargs): # reliably restored by inspect
@@ -473,8 +453,6 @@ class HeaderGroup(__gi_overrides_GObject.Object, __gi_repository_Gtk.Buildable):
 
     g_type_instance = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
-    parent_instance = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-
     qdata = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
     ref_count = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
@@ -484,12 +462,12 @@ class HeaderGroup(__gi_overrides_GObject.Object, __gi_repository_Gtk.Buildable):
     __grefcount__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
-    props = None # (!) real value is '<gi._gi.GProps object at 0x7f2c968214a8>'
+    props = None # (!) real value is '<gi._gi.GProps object at 0x7f2c96959828>'
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(HeaderGroup), '__module__': 'gi.repository.Handy', '__gtype__': <GType HdyHeaderGroup (32879584)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new), 'add_header_bar': gi.FunctionInfo(add_header_bar), 'get_focus': gi.FunctionInfo(get_focus), 'get_header_bars': gi.FunctionInfo(get_header_bars), 'remove_header_bar': gi.FunctionInfo(remove_header_bar), 'set_focus': gi.FunctionInfo(set_focus), 'parent_instance': <property object at 0x7f2c96a4b868>})"
-    __gdoc__ = 'Object HdyHeaderGroup\n\nProperties from HdyHeaderGroup:\n  focus -> GtkHeaderBar: Focus\n    The header bar that should have the focus\n\nSignals from GObject:\n  notify (GParam)\n\n'
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(SwipeTracker), '__module__': 'gi.repository.Handy', '__gtype__': <GType HdySwipeTracker (33169280)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new), 'get_allow_mouse_drag': gi.FunctionInfo(get_allow_mouse_drag), 'get_enabled': gi.FunctionInfo(get_enabled), 'get_reversed': gi.FunctionInfo(get_reversed), 'get_swipeable': gi.FunctionInfo(get_swipeable), 'set_allow_mouse_drag': gi.FunctionInfo(set_allow_mouse_drag), 'set_enabled': gi.FunctionInfo(set_enabled), 'set_reversed': gi.FunctionInfo(set_reversed), 'shift_position': gi.FunctionInfo(shift_position)})"
+    __gdoc__ = 'Object HdySwipeTracker\n\nSignals from HdySwipeTracker:\n  begin-swipe (HdyNavigationDirection, gboolean)\n  update-swipe (gdouble)\n  end-swipe (gint64, gdouble)\n\nProperties from HdySwipeTracker:\n  swipeable -> HdySwipeable: Swipeable\n    The swipeable the swipe tracker is attached to\n  enabled -> gboolean: Enabled\n    Whether the swipe tracker processes events\n  reversed -> gboolean: Reversed\n    Whether swipe direction is reversed\n  allow-mouse-drag -> gboolean: Allow mouse drag\n    Whether to allow dragging with mouse pointer\n\nSignals from GObject:\n  notify (GParam)\n\n'
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType HdyHeaderGroup (32879584)>'
-    __info__ = ObjectInfo(HeaderGroup)
+    __gtype__ = None # (!) real value is '<GType HdySwipeTracker (33169280)>'
+    __info__ = ObjectInfo(SwipeTracker)
 
 

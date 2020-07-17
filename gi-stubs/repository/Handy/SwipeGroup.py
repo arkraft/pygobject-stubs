@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Handy
-# from /usr/lib64/girepository-1.0/Handy-0.0.typelib
+# from /usr/lib/x86_64-linux-gnu/girepository-1.0/Handy-1.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -96,7 +96,7 @@ class SwipeGroup(__gi_overrides_GObject.Object, __gi_repository_Gtk.Buildable):
         return False
 
     def disconnect(*args, **kwargs): # reliably restored by inspect
-        """ signal_handler_disconnect(instance:GObject.Object, handler_id:int) """
+        # no doc
         pass
 
     def disconnect_by_func(self, *args, **kwargs): # real signature unknown
@@ -189,15 +189,15 @@ class SwipeGroup(__gi_overrides_GObject.Object, __gi_repository_Gtk.Buildable):
         pass
 
     def handler_disconnect(*args, **kwargs): # reliably restored by inspect
-        """ signal_handler_disconnect(instance:GObject.Object, handler_id:int) """
+        # no doc
         pass
 
     def handler_is_connected(*args, **kwargs): # reliably restored by inspect
-        """ signal_handler_is_connected(instance:GObject.Object, handler_id:int) -> bool """
+        # no doc
         pass
 
     def handler_unblock(*args, **kwargs): # reliably restored by inspect
-        """ signal_handler_unblock(instance:GObject.Object, handler_id:int) """
+        # no doc
         pass
 
     def handler_unblock_by_func(self, *args, **kwargs): # real signature unknown
@@ -310,7 +310,7 @@ class SwipeGroup(__gi_overrides_GObject.Object, __gi_repository_Gtk.Buildable):
         pass
 
     def stop_emission_by_name(*args, **kwargs): # reliably restored by inspect
-        """ signal_stop_emission_by_name(instance:GObject.Object, detailed_signal:str) """
+        # no doc
         pass
 
     def thaw_notify(self): # real signature unknown; restored from __doc__
@@ -362,16 +362,19 @@ class SwipeGroup(__gi_overrides_GObject.Object, __gi_repository_Gtk.Buildable):
         """ Implement delattr(self, name). """
         pass
 
-    def __dir__(self, *args, **kwargs): # real signature unknown
-        """ Default dir() implementation. """
-        pass
+    def __dir__(self): # real signature unknown; restored from __doc__
+        """
+        __dir__() -> list
+        default dir() implementation
+        """
+        return []
 
     def __eq__(self, *args, **kwargs): # real signature unknown
         """ Return self==value. """
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
-        """ Default object formatter. """
+        """ default object formatter """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -420,11 +423,11 @@ class SwipeGroup(__gi_overrides_GObject.Object, __gi_repository_Gtk.Buildable):
         pass
 
     def __reduce_ex__(self, *args, **kwargs): # real signature unknown
-        """ Helper for pickle. """
+        """ helper for pickle """
         pass
 
     def __reduce__(self, *args, **kwargs): # real signature unknown
-        """ Helper for pickle. """
+        """ helper for pickle """
         pass
 
     def __repr__(self, *args, **kwargs): # real signature unknown
@@ -435,9 +438,12 @@ class SwipeGroup(__gi_overrides_GObject.Object, __gi_repository_Gtk.Buildable):
         """ Implement setattr(self, name, value). """
         pass
 
-    def __sizeof__(self, *args, **kwargs): # real signature unknown
-        """ Size of object in memory, in bytes. """
-        pass
+    def __sizeof__(self): # real signature unknown; restored from __doc__
+        """
+        __sizeof__() -> int
+        size of object in memory, in bytes
+        """
+        return 0
 
     def __str__(self, *args, **kwargs): # real signature unknown
         """ Return str(self). """
@@ -468,12 +474,12 @@ class SwipeGroup(__gi_overrides_GObject.Object, __gi_repository_Gtk.Buildable):
     __grefcount__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
-    props = None # (!) real value is '<gi._gi.GProps object at 0x7f4ea1ff8820>'
+    props = None # (!) real value is '<gi._gi.GProps object at 0x7f2c96959a90>'
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(SwipeGroup), '__module__': 'gi.repository.Handy', '__gtype__': <GType HdySwipeGroup (93893295281536)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new), 'add_swipeable': gi.FunctionInfo(add_swipeable), 'get_swipeables': gi.FunctionInfo(get_swipeables), 'remove_swipeable': gi.FunctionInfo(remove_swipeable)})"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(SwipeGroup), '__module__': 'gi.repository.Handy', '__gtype__': <GType HdySwipeGroup (33381088)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new), 'add_swipeable': gi.FunctionInfo(add_swipeable), 'get_swipeables': gi.FunctionInfo(get_swipeables), 'remove_swipeable': gi.FunctionInfo(remove_swipeable)})"
     __gdoc__ = 'Object HdySwipeGroup\n\nSignals from GObject:\n  notify (GParam)\n\n'
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType HdySwipeGroup (93893295281536)>'
+    __gtype__ = None # (!) real value is '<GType HdySwipeGroup (33381088)>'
     __info__ = ObjectInfo(SwipeGroup)
 
 

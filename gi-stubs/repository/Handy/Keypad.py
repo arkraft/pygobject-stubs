@@ -1,6 +1,6 @@
 # encoding: utf-8
 # module gi.repository.Handy
-# from /usr/lib64/girepository-1.0/Handy-0.0.typelib
+# from /usr/lib/x86_64-linux-gnu/girepository-1.0/Handy-1.typelib
 # by generator 1.147
 """
 An object which wraps an introspection typelib.
@@ -19,7 +19,7 @@ import gi.repository.Gtk as __gi_repository_Gtk
 import gobject as __gobject
 
 
-class Keypad(__gi_repository_Gtk.Grid):
+class Keypad(__gi_repository_Gtk.Bin):
     """
     :Constructors:
     
@@ -59,14 +59,6 @@ class Keypad(__gi_repository_Gtk.Grid):
     def add_tick_callback(self, callback, user_data=None): # real signature unknown; restored from __doc__
         """ add_tick_callback(self, callback:Gtk.TickCallback, user_data=None) -> int """
         return 0
-
-    def attach(self, child, left, top, width, height): # real signature unknown; restored from __doc__
-        """ attach(self, child:Gtk.Widget, left:int, top:int, width:int, height:int) """
-        pass
-
-    def attach_next_to(self, child, sibling=None, side, width, height): # real signature unknown; restored from __doc__
-        """ attach_next_to(self, child:Gtk.Widget, sibling:Gtk.Widget=None, side:Gtk.PositionType, width:int, height:int) """
-        pass
 
     def bind_property(self, *args, **kwargs): # real signature unknown
         pass
@@ -204,7 +196,7 @@ class Keypad(__gi_repository_Gtk.Grid):
         return False
 
     def disconnect(*args, **kwargs): # reliably restored by inspect
-        """ signal_handler_disconnect(instance:GObject.Object, handler_id:int) """
+        # no doc
         pass
 
     def disconnect_by_func(self, *args, **kwargs): # real signature unknown
@@ -799,10 +791,6 @@ class Keypad(__gi_repository_Gtk.Grid):
         """ get_app_paintable(self) -> bool """
         return False
 
-    def get_baseline_row(self): # real signature unknown; restored from __doc__
-        """ get_baseline_row(self) -> int """
-        return 0
-
     def get_border_width(self): # real signature unknown; restored from __doc__
         """ get_border_width(self) -> int """
         return 0
@@ -815,13 +803,13 @@ class Keypad(__gi_repository_Gtk.Grid):
         """ get_can_focus(self) -> bool """
         return False
 
+    def get_child(self): # real signature unknown; restored from __doc__
+        """ get_child(self) -> Gtk.Widget or None """
+        pass
+
     def get_children(self): # real signature unknown; restored from __doc__
         """ get_children(self) -> list """
         return []
-
-    def get_child_at(self, left, top): # real signature unknown; restored from __doc__
-        """ get_child_at(self, left:int, top:int) -> Gtk.Widget or None """
-        pass
 
     def get_child_requisition(self): # real signature unknown; restored from __doc__
         """ get_child_requisition(self) -> requisition:Gtk.Requisition """
@@ -838,10 +826,6 @@ class Keypad(__gi_repository_Gtk.Grid):
     def get_clipboard(self, selection): # real signature unknown; restored from __doc__
         """ get_clipboard(self, selection:Gdk.Atom) -> Gtk.Clipboard """
         pass
-
-    def get_column_homogeneous(self): # real signature unknown; restored from __doc__
-        """ get_column_homogeneous(self) -> bool """
-        return False
 
     def get_column_spacing(self): # real signature unknown; restored from __doc__
         """ get_column_spacing(self) -> int """
@@ -896,7 +880,7 @@ class Keypad(__gi_repository_Gtk.Grid):
         return 0
 
     def get_focus_chain(*args, **kwargs): # reliably restored by inspect
-        """ get_focus_chain(self) -> bool, focusable_widgets:list """
+        # no doc
         pass
 
     def get_focus_child(self): # real signature unknown; restored from __doc__
@@ -999,10 +983,6 @@ class Keypad(__gi_repository_Gtk.Grid):
         """ get_opacity(self) -> float """
         return 0.0
 
-    def get_orientation(self): # real signature unknown; restored from __doc__
-        """ get_orientation(self) -> Gtk.Orientation """
-        pass
-
     def get_pango_context(self): # real signature unknown; restored from __doc__
         """ get_pango_context(self) -> Pango.Context """
         pass
@@ -1084,14 +1064,6 @@ class Keypad(__gi_repository_Gtk.Grid):
     def get_root_window(self): # real signature unknown; restored from __doc__
         """ get_root_window(self) -> Gdk.Window """
         pass
-
-    def get_row_baseline_position(self, row): # real signature unknown; restored from __doc__
-        """ get_row_baseline_position(self, row:int) -> Gtk.BaselinePosition """
-        pass
-
-    def get_row_homogeneous(self): # real signature unknown; restored from __doc__
-        """ get_row_homogeneous(self) -> bool """
-        return False
 
     def get_row_spacing(self): # real signature unknown; restored from __doc__
         """ get_row_spacing(self) -> int """
@@ -1225,15 +1197,15 @@ class Keypad(__gi_repository_Gtk.Grid):
         pass
 
     def handler_disconnect(*args, **kwargs): # reliably restored by inspect
-        """ signal_handler_disconnect(instance:GObject.Object, handler_id:int) """
+        # no doc
         pass
 
     def handler_is_connected(*args, **kwargs): # reliably restored by inspect
-        """ signal_handler_is_connected(instance:GObject.Object, handler_id:int) -> bool """
+        # no doc
         pass
 
     def handler_unblock(*args, **kwargs): # reliably restored by inspect
-        """ signal_handler_unblock(instance:GObject.Object, handler_id:int) """
+        # no doc
         pass
 
     def handler_unblock_by_func(self, *args, **kwargs): # real signature unknown
@@ -1285,18 +1257,6 @@ class Keypad(__gi_repository_Gtk.Grid):
 
     def insert_action_group(self, name, group=None): # real signature unknown; restored from __doc__
         """ insert_action_group(self, name:str, group:Gio.ActionGroup=None) """
-        pass
-
-    def insert_column(self, position): # real signature unknown; restored from __doc__
-        """ insert_column(self, position:int) """
-        pass
-
-    def insert_next_to(self, sibling, side): # real signature unknown; restored from __doc__
-        """ insert_next_to(self, sibling:Gtk.Widget, side:Gtk.PositionType) """
-        pass
-
-    def insert_row(self, position): # real signature unknown; restored from __doc__
-        """ insert_row(self, position:int) """
         pass
 
     def install_child_properties(self, pspecs): # real signature unknown; restored from __doc__
@@ -1551,16 +1511,8 @@ class Keypad(__gi_repository_Gtk.Grid):
         """ remove_accelerator(self, accel_group:Gtk.AccelGroup, accel_key:int, accel_mods:Gdk.ModifierType) -> bool """
         return False
 
-    def remove_column(self, position): # real signature unknown; restored from __doc__
-        """ remove_column(self, position:int) """
-        pass
-
     def remove_mnemonic_label(self, label): # real signature unknown; restored from __doc__
         """ remove_mnemonic_label(self, label:Gtk.Widget) """
-        pass
-
-    def remove_row(self, position): # real signature unknown; restored from __doc__
-        """ remove_row(self, position:int) """
         pass
 
     def remove_tick_callback(self, id): # real signature unknown; restored from __doc__
@@ -1631,10 +1583,6 @@ class Keypad(__gi_repository_Gtk.Grid):
         """ set_app_paintable(self, app_paintable:bool) """
         pass
 
-    def set_baseline_row(self, row): # real signature unknown; restored from __doc__
-        """ set_baseline_row(self, row:int) """
-        pass
-
     def set_border_width(self, border_width): # real signature unknown; restored from __doc__
         """ set_border_width(self, border_width:int) """
         pass
@@ -1657,10 +1605,6 @@ class Keypad(__gi_repository_Gtk.Grid):
 
     def set_clip(self, clip): # real signature unknown; restored from __doc__
         """ set_clip(self, clip:Gdk.Rectangle) """
-        pass
-
-    def set_column_homogeneous(self, homogeneous): # real signature unknown; restored from __doc__
-        """ set_column_homogeneous(self, homogeneous:bool) """
         pass
 
     def set_column_spacing(self, spacing): # real signature unknown; restored from __doc__
@@ -1803,10 +1747,6 @@ class Keypad(__gi_repository_Gtk.Grid):
         """ set_opacity(self, opacity:float) """
         pass
 
-    def set_orientation(self, orientation): # real signature unknown; restored from __doc__
-        """ set_orientation(self, orientation:Gtk.Orientation) """
-        pass
-
     def set_parent(self, parent): # real signature unknown; restored from __doc__
         """ set_parent(self, parent:Gtk.Widget) """
         pass
@@ -1843,14 +1783,6 @@ class Keypad(__gi_repository_Gtk.Grid):
 
     def set_right_action(self, widget): # real signature unknown; restored from __doc__
         """ set_right_action(self, widget:Gtk.Widget) """
-        pass
-
-    def set_row_baseline_position(self, row, pos): # real signature unknown; restored from __doc__
-        """ set_row_baseline_position(self, row:int, pos:Gtk.BaselinePosition) """
-        pass
-
-    def set_row_homogeneous(self, homogeneous): # real signature unknown; restored from __doc__
-        """ set_row_homogeneous(self, homogeneous:bool) """
         pass
 
     def set_row_spacing(self, spacing): # real signature unknown; restored from __doc__
@@ -1970,7 +1902,7 @@ class Keypad(__gi_repository_Gtk.Grid):
         pass
 
     def stop_emission_by_name(*args, **kwargs): # reliably restored by inspect
-        """ signal_stop_emission_by_name(instance:GObject.Object, detailed_signal:str) """
+        # no doc
         pass
 
     def style_attach(self): # real signature unknown; restored from __doc__
@@ -1990,7 +1922,7 @@ class Keypad(__gi_repository_Gtk.Grid):
         pass
 
     def translate_coordinates(*args, **kwargs): # reliably restored by inspect
-        """ translate_coordinates(self, dest_widget:Gtk.Widget, src_x:int, src_y:int) -> bool, dest_x:int, dest_y:int """
+        # no doc
         pass
 
     def trigger_tooltip_query(self): # real signature unknown; restored from __doc__
@@ -2074,16 +2006,19 @@ class Keypad(__gi_repository_Gtk.Grid):
         """ Implement delattr(self, name). """
         pass
 
-    def __dir__(self, *args, **kwargs): # real signature unknown
-        """ Default dir() implementation. """
-        pass
+    def __dir__(self): # real signature unknown; restored from __doc__
+        """
+        __dir__() -> list
+        default dir() implementation
+        """
+        return []
 
     def __eq__(self, *args, **kwargs): # real signature unknown
         """ Return self==value. """
         pass
 
     def __format__(self, *args, **kwargs): # real signature unknown
-        """ Default object formatter. """
+        """ default object formatter """
         pass
 
     def __getattribute__(self, *args, **kwargs): # real signature unknown
@@ -2144,11 +2079,11 @@ class Keypad(__gi_repository_Gtk.Grid):
         pass
 
     def __reduce_ex__(self, *args, **kwargs): # real signature unknown
-        """ Helper for pickle. """
+        """ helper for pickle """
         pass
 
     def __reduce__(self, *args, **kwargs): # real signature unknown
-        """ Helper for pickle. """
+        """ helper for pickle """
         pass
 
     def __repr__(self, *args, **kwargs): # real signature unknown
@@ -2159,9 +2094,12 @@ class Keypad(__gi_repository_Gtk.Grid):
         """ Implement setattr(self, name, value). """
         pass
 
-    def __sizeof__(self, *args, **kwargs): # real signature unknown
-        """ Size of object in memory, in bytes. """
-        pass
+    def __sizeof__(self): # real signature unknown; restored from __doc__
+        """
+        __sizeof__() -> int
+        size of object in memory, in bytes
+        """
+        return 0
 
     def __str__(self, *args, **kwargs): # real signature unknown
         """ Return str(self). """
@@ -2200,12 +2138,12 @@ class Keypad(__gi_repository_Gtk.Grid):
     __grefcount__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
 
 
-    props = None # (!) real value is '<gi._gi.GProps object at 0x7f4ea0bce7c0>'
+    props = None # (!) real value is '<gi._gi.GProps object at 0x7f2c9680b080>'
     __class__ = None # (!) real value is "<class 'gi.types.GObjectMeta'>"
-    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Keypad), '__module__': 'gi.repository.Handy', '__gtype__': <GType HdyKeypad (93893295087728)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new), 'get_entry': gi.FunctionInfo(get_entry), 'set_entry': gi.FunctionInfo(set_entry), 'set_left_action': gi.FunctionInfo(set_left_action), 'set_right_action': gi.FunctionInfo(set_right_action), 'show_symbols': gi.FunctionInfo(show_symbols), 'parent_instance': <property object at 0x7f4ea0d69450>})"
-    __gdoc__ = "Object HdyKeypad\n\nProperties from HdyKeypad:\n  show-symbols -> gboolean: Show Symbols\n    Whether the second line of symbols should be shown or not\n  only-digits -> gboolean: Only Digits\n    Whether the keypad should show only digits or also extra buttons for #, *\n  entry -> GtkWidget: Entry widget\n    The entry widget connected to the keypad\n  right-action -> GtkWidget: Right action widget\n    The right action widget\n  left-action -> GtkWidget: Left action widget\n    The left action widget\n\nProperties from GtkGrid:\n  row-spacing -> gint: Row spacing\n    The amount of space between two consecutive rows\n  column-spacing -> gint: Column spacing\n    The amount of space between two consecutive columns\n  row-homogeneous -> gboolean: Row Homogeneous\n    If TRUE, the rows are all the same height\n  column-homogeneous -> gboolean: Column Homogeneous\n    If TRUE, the columns are all the same width\n  baseline-row -> gint: Baseline Row\n    The row to align the to the baseline when valign is GTK_ALIGN_BASELINE\n\nSignals from GtkContainer:\n  add (GtkWidget)\n  remove (GtkWidget)\n  check-resize ()\n  set-focus-child (GtkWidget)\n\nProperties from GtkContainer:\n  border-width -> guint: Border width\n    The width of the empty border outside the containers children\n  resize-mode -> GtkResizeMode: Resize mode\n    Specify how resize events are handled\n  child -> GtkWidget: Child\n    Can be used to add a new child to the container\n\nSignals from GtkWidget:\n  composited-changed ()\n  destroy ()\n  show ()\n  hide ()\n  map ()\n  unmap ()\n  realize ()\n  unrealize ()\n  size-allocate (GdkRectangle)\n  state-changed (GtkStateType)\n  state-flags-changed (GtkStateFlags)\n  parent-set (GtkWidget)\n  hierarchy-changed (GtkWidget)\n  style-set (GtkStyle)\n  style-updated ()\n  direction-changed (GtkTextDirection)\n  grab-notify (gboolean)\n  child-notify (GParam)\n  draw (CairoContext) -> gboolean\n  mnemonic-activate (gboolean) -> gboolean\n  grab-focus ()\n  focus (GtkDirectionType) -> gboolean\n  move-focus (GtkDirectionType)\n  keynav-failed (GtkDirectionType) -> gboolean\n  event (GdkEvent) -> gboolean\n  event-after (GdkEvent)\n  button-press-event (GdkEvent) -> gboolean\n  button-release-event (GdkEvent) -> gboolean\n  touch-event (GdkEvent) -> gboolean\n  scroll-event (GdkEvent) -> gboolean\n  motion-notify-event (GdkEvent) -> gboolean\n  delete-event (GdkEvent) -> gboolean\n  destroy-event (GdkEvent) -> gboolean\n  key-press-event (GdkEvent) -> gboolean\n  key-release-event (GdkEvent) -> gboolean\n  enter-notify-event (GdkEvent) -> gboolean\n  leave-notify-event (GdkEvent) -> gboolean\n  configure-event (GdkEvent) -> gboolean\n  focus-in-event (GdkEvent) -> gboolean\n  focus-out-event (GdkEvent) -> gboolean\n  map-event (GdkEvent) -> gboolean\n  unmap-event (GdkEvent) -> gboolean\n  property-notify-event (GdkEvent) -> gboolean\n  selection-clear-event (GdkEvent) -> gboolean\n  selection-request-event (GdkEvent) -> gboolean\n  selection-notify-event (GdkEvent) -> gboolean\n  selection-received (GtkSelectionData, guint)\n  selection-get (GtkSelectionData, guint, guint)\n  proximity-in-event (GdkEvent) -> gboolean\n  proximity-out-event (GdkEvent) -> gboolean\n  drag-leave (GdkDragContext, guint)\n  drag-begin (GdkDragContext)\n  drag-end (GdkDragContext)\n  drag-data-delete (GdkDragContext)\n  drag-failed (GdkDragContext, GtkDragResult) -> gboolean\n  drag-motion (GdkDragContext, gint, gint, guint) -> gboolean\n  drag-drop (GdkDragContext, gint, gint, guint) -> gboolean\n  drag-data-get (GdkDragContext, GtkSelectionData, guint, guint)\n  drag-data-received (GdkDragContext, gint, gint, GtkSelectionData, guint, guint)\n  visibility-notify-event (GdkEvent) -> gboolean\n  window-state-event (GdkEvent) -> gboolean\n  damage-event (GdkEvent) -> gboolean\n  grab-broken-event (GdkEvent) -> gboolean\n  query-tooltip (gint, gint, gboolean, GtkTooltip) -> gboolean\n  popup-menu () -> gboolean\n  show-help (GtkWidgetHelpType) -> gboolean\n  accel-closures-changed ()\n  screen-changed (GdkScreen)\n  can-activate-accel (guint) -> gboolean\n\nProperties from GtkWidget:\n  name -> gchararray: Widget name\n    The name of the widget\n  parent -> GtkContainer: Parent widget\n    The parent widget of this widget. Must be a Container widget\n  width-request -> gint: Width request\n    Override for width request of the widget, or -1 if natural request should be used\n  height-request -> gint: Height request\n    Override for height request of the widget, or -1 if natural request should be used\n  visible -> gboolean: Visible\n    Whether the widget is visible\n  sensitive -> gboolean: Sensitive\n    Whether the widget responds to input\n  app-paintable -> gboolean: Application paintable\n    Whether the application will paint directly on the widget\n  can-focus -> gboolean: Can focus\n    Whether the widget can accept the input focus\n  has-focus -> gboolean: Has focus\n    Whether the widget has the input focus\n  is-focus -> gboolean: Is focus\n    Whether the widget is the focus widget within the toplevel\n  focus-on-click -> gboolean: Focus on click\n    Whether the widget should grab focus when it is clicked with the mouse\n  can-default -> gboolean: Can default\n    Whether the widget can be the default widget\n  has-default -> gboolean: Has default\n    Whether the widget is the default widget\n  receives-default -> gboolean: Receives default\n    If TRUE, the widget will receive the default action when it is focused\n  composite-child -> gboolean: Composite child\n    Whether the widget is part of a composite widget\n  style -> GtkStyle: Style\n    The style of the widget, which contains information about how it will look (colors etc)\n  events -> GdkEventMask: Events\n    The event mask that decides what kind of GdkEvents this widget gets\n  no-show-all -> gboolean: No show all\n    Whether gtk_widget_show_all() should not affect this widget\n  has-tooltip -> gboolean: Has tooltip\n    Whether this widget has a tooltip\n  tooltip-markup -> gchararray: Tooltip markup\n    The contents of the tooltip for this widget\n  tooltip-text -> gchararray: Tooltip Text\n    The contents of the tooltip for this widget\n  window -> GdkWindow: Window\n    The widget's window if it is realized\n  opacity -> gdouble: Opacity for Widget\n    The opacity of the widget, from 0 to 1\n  double-buffered -> gboolean: Double Buffered\n    Whether the widget is double buffered\n  halign -> GtkAlign: Horizontal Alignment\n    How to position in extra horizontal space\n  valign -> GtkAlign: Vertical Alignment\n    How to position in extra vertical space\n  margin-left -> gint: Margin on Left\n    Pixels of extra space on the left side\n  margin-right -> gint: Margin on Right\n    Pixels of extra space on the right side\n  margin-start -> gint: Margin on Start\n    Pixels of extra space on the start\n  margin-end -> gint: Margin on End\n    Pixels of extra space on the end\n  margin-top -> gint: Margin on Top\n    Pixels of extra space on the top side\n  margin-bottom -> gint: Margin on Bottom\n    Pixels of extra space on the bottom side\n  margin -> gint: All Margins\n    Pixels of extra space on all four sides\n  hexpand -> gboolean: Horizontal Expand\n    Whether widget wants more horizontal space\n  vexpand -> gboolean: Vertical Expand\n    Whether widget wants more vertical space\n  hexpand-set -> gboolean: Horizontal Expand Set\n    Whether to use the hexpand property\n  vexpand-set -> gboolean: Vertical Expand Set\n    Whether to use the vexpand property\n  expand -> gboolean: Expand Both\n    Whether widget wants to expand in both directions\n  scale-factor -> gint: Scale factor\n    The scaling factor of the window\n\nSignals from GObject:\n  notify (GParam)\n\n"
+    __dict__ = None # (!) real value is "mappingproxy({'__info__': ObjectInfo(Keypad), '__module__': 'gi.repository.Handy', '__gtype__': <GType HdyKeypad (33350800)>, '__doc__': None, '__gsignals__': {}, 'new': gi.FunctionInfo(new), 'get_column_spacing': gi.FunctionInfo(get_column_spacing), 'get_entry': gi.FunctionInfo(get_entry), 'get_row_spacing': gi.FunctionInfo(get_row_spacing), 'set_column_spacing': gi.FunctionInfo(set_column_spacing), 'set_entry': gi.FunctionInfo(set_entry), 'set_left_action': gi.FunctionInfo(set_left_action), 'set_right_action': gi.FunctionInfo(set_right_action), 'set_row_spacing': gi.FunctionInfo(set_row_spacing), 'show_symbols': gi.FunctionInfo(show_symbols), 'parent_instance': <property object at 0x7f2c96a4b9f8>})"
+    __gdoc__ = "Object HdyKeypad\n\nProperties from HdyKeypad:\n  row-spacing -> guint: Row spacing\n    The amount of space between two consecutive rows\n  column-spacing -> guint: Column spacing\n    The amount of space between two consecutive columns\n  show-symbols -> gboolean: Show Symbols\n    Whether the second line of symbols should be shown or not\n  only-digits -> gboolean: Only Digits\n    Whether the keypad should show only digits or also extra buttons for #, *\n  entry -> GtkWidget: Entry widget\n    The entry widget connected to the keypad\n  right-action -> GtkWidget: Right action widget\n    The right action widget\n  left-action -> GtkWidget: Left action widget\n    The left action widget\n\nSignals from GtkContainer:\n  add (GtkWidget)\n  remove (GtkWidget)\n  check-resize ()\n  set-focus-child (GtkWidget)\n\nProperties from GtkContainer:\n  border-width -> guint: Border width\n    The width of the empty border outside the containers children\n  resize-mode -> GtkResizeMode: Resize mode\n    Specify how resize events are handled\n  child -> GtkWidget: Child\n    Can be used to add a new child to the container\n\nSignals from GtkWidget:\n  composited-changed ()\n  destroy ()\n  show ()\n  hide ()\n  map ()\n  unmap ()\n  realize ()\n  unrealize ()\n  size-allocate (GdkRectangle)\n  state-changed (GtkStateType)\n  state-flags-changed (GtkStateFlags)\n  parent-set (GtkWidget)\n  hierarchy-changed (GtkWidget)\n  style-set (GtkStyle)\n  style-updated ()\n  direction-changed (GtkTextDirection)\n  grab-notify (gboolean)\n  child-notify (GParam)\n  draw (CairoContext) -> gboolean\n  mnemonic-activate (gboolean) -> gboolean\n  grab-focus ()\n  focus (GtkDirectionType) -> gboolean\n  move-focus (GtkDirectionType)\n  keynav-failed (GtkDirectionType) -> gboolean\n  event (GdkEvent) -> gboolean\n  event-after (GdkEvent)\n  button-press-event (GdkEvent) -> gboolean\n  button-release-event (GdkEvent) -> gboolean\n  touch-event (GdkEvent) -> gboolean\n  scroll-event (GdkEvent) -> gboolean\n  motion-notify-event (GdkEvent) -> gboolean\n  delete-event (GdkEvent) -> gboolean\n  destroy-event (GdkEvent) -> gboolean\n  key-press-event (GdkEvent) -> gboolean\n  key-release-event (GdkEvent) -> gboolean\n  enter-notify-event (GdkEvent) -> gboolean\n  leave-notify-event (GdkEvent) -> gboolean\n  configure-event (GdkEvent) -> gboolean\n  focus-in-event (GdkEvent) -> gboolean\n  focus-out-event (GdkEvent) -> gboolean\n  map-event (GdkEvent) -> gboolean\n  unmap-event (GdkEvent) -> gboolean\n  property-notify-event (GdkEvent) -> gboolean\n  selection-clear-event (GdkEvent) -> gboolean\n  selection-request-event (GdkEvent) -> gboolean\n  selection-notify-event (GdkEvent) -> gboolean\n  selection-received (GtkSelectionData, guint)\n  selection-get (GtkSelectionData, guint, guint)\n  proximity-in-event (GdkEvent) -> gboolean\n  proximity-out-event (GdkEvent) -> gboolean\n  drag-leave (GdkDragContext, guint)\n  drag-begin (GdkDragContext)\n  drag-end (GdkDragContext)\n  drag-data-delete (GdkDragContext)\n  drag-failed (GdkDragContext, GtkDragResult) -> gboolean\n  drag-motion (GdkDragContext, gint, gint, guint) -> gboolean\n  drag-drop (GdkDragContext, gint, gint, guint) -> gboolean\n  drag-data-get (GdkDragContext, GtkSelectionData, guint, guint)\n  drag-data-received (GdkDragContext, gint, gint, GtkSelectionData, guint, guint)\n  visibility-notify-event (GdkEvent) -> gboolean\n  window-state-event (GdkEvent) -> gboolean\n  damage-event (GdkEvent) -> gboolean\n  grab-broken-event (GdkEvent) -> gboolean\n  query-tooltip (gint, gint, gboolean, GtkTooltip) -> gboolean\n  popup-menu () -> gboolean\n  show-help (GtkWidgetHelpType) -> gboolean\n  accel-closures-changed ()\n  screen-changed (GdkScreen)\n  can-activate-accel (guint) -> gboolean\n\nProperties from GtkWidget:\n  name -> gchararray: Widget name\n    The name of the widget\n  parent -> GtkContainer: Parent widget\n    The parent widget of this widget. Must be a Container widget\n  width-request -> gint: Width request\n    Override for width request of the widget, or -1 if natural request should be used\n  height-request -> gint: Height request\n    Override for height request of the widget, or -1 if natural request should be used\n  visible -> gboolean: Visible\n    Whether the widget is visible\n  sensitive -> gboolean: Sensitive\n    Whether the widget responds to input\n  app-paintable -> gboolean: Application paintable\n    Whether the application will paint directly on the widget\n  can-focus -> gboolean: Can focus\n    Whether the widget can accept the input focus\n  has-focus -> gboolean: Has focus\n    Whether the widget has the input focus\n  is-focus -> gboolean: Is focus\n    Whether the widget is the focus widget within the toplevel\n  focus-on-click -> gboolean: Focus on click\n    Whether the widget should grab focus when it is clicked with the mouse\n  can-default -> gboolean: Can default\n    Whether the widget can be the default widget\n  has-default -> gboolean: Has default\n    Whether the widget is the default widget\n  receives-default -> gboolean: Receives default\n    If TRUE, the widget will receive the default action when it is focused\n  composite-child -> gboolean: Composite child\n    Whether the widget is part of a composite widget\n  style -> GtkStyle: Style\n    The style of the widget, which contains information about how it will look (colors etc)\n  events -> GdkEventMask: Events\n    The event mask that decides what kind of GdkEvents this widget gets\n  no-show-all -> gboolean: No show all\n    Whether gtk_widget_show_all() should not affect this widget\n  has-tooltip -> gboolean: Has tooltip\n    Whether this widget has a tooltip\n  tooltip-markup -> gchararray: Tooltip markup\n    The contents of the tooltip for this widget\n  tooltip-text -> gchararray: Tooltip Text\n    The contents of the tooltip for this widget\n  window -> GdkWindow: Window\n    The widget's window if it is realized\n  opacity -> gdouble: Opacity for Widget\n    The opacity of the widget, from 0 to 1\n  double-buffered -> gboolean: Double Buffered\n    Whether the widget is double buffered\n  halign -> GtkAlign: Horizontal Alignment\n    How to position in extra horizontal space\n  valign -> GtkAlign: Vertical Alignment\n    How to position in extra vertical space\n  margin-left -> gint: Margin on Left\n    Pixels of extra space on the left side\n  margin-right -> gint: Margin on Right\n    Pixels of extra space on the right side\n  margin-start -> gint: Margin on Start\n    Pixels of extra space on the start\n  margin-end -> gint: Margin on End\n    Pixels of extra space on the end\n  margin-top -> gint: Margin on Top\n    Pixels of extra space on the top side\n  margin-bottom -> gint: Margin on Bottom\n    Pixels of extra space on the bottom side\n  margin -> gint: All Margins\n    Pixels of extra space on all four sides\n  hexpand -> gboolean: Horizontal Expand\n    Whether widget wants more horizontal space\n  vexpand -> gboolean: Vertical Expand\n    Whether widget wants more vertical space\n  hexpand-set -> gboolean: Horizontal Expand Set\n    Whether to use the hexpand property\n  vexpand-set -> gboolean: Vertical Expand Set\n    Whether to use the vexpand property\n  expand -> gboolean: Expand Both\n    Whether widget wants to expand in both directions\n  scale-factor -> gint: Scale factor\n    The scaling factor of the window\n\nSignals from GObject:\n  notify (GParam)\n\n"
     __gsignals__ = {}
-    __gtype__ = None # (!) real value is '<GType HdyKeypad (93893295087728)>'
+    __gtype__ = None # (!) real value is '<GType HdyKeypad (33350800)>'
     __info__ = ObjectInfo(Keypad)
 
 
